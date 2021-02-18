@@ -8,7 +8,6 @@
     width: 100%;
     text-align: center;
     padding-top: 7rem;
-    /* padding-bottom: 3rem; */
 }
 .gridInfoContainer .head{
     width: 540px;
@@ -116,4 +115,56 @@
     color: white;
     font-weight: 500;
     border: none;
+}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .gridInfoContainer .grid,
+    .gridInfoContainer2 .grid2{
+        width: 100%;
+        flex-direction: column;
+    }
+    .gridInfoContainer .grid .col1,
+    .gridInfoContainer .grid .col2,
+    .gridInfoContainer .grid .col3,
+    .gridInfoContainer2 .grid2 .col1,
+    .gridInfoContainer2 .grid2 .col2,
+    .gridInfoContainer2 .grid2 .col3{
+        width: 100%;
+    }
+    .gridInfoContainer .grid .col2{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .gridInfoContainer .head,
+    .gridInfoContainer2 .head{
+        width: auto !important;
+    }
+    .gridInfoContainer2 .head{
+        padding-bottom: 2rem;
+    }
+    .gridInfoContainer .head h1,
+    .gridInfoContainer2 .head h1{
+        padding: 0 5%;
+        width: 100% !important;
+        font-size: 16px;
+    }
+    .gridInfoContainer2 .grid2 .col1,
+    .gridInfoContainer2 .grid2 .col2,
+    .gridInfoContainer2 .grid2 .col3{
+        height: 50%;
+    }
+    .gridInfoContainer2 .grid2 .col2{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .gridInfoContainer2{
+        padding: 2rem;
+    }
+    .gridInfoContainer2 .buttonContainer {
+        width: 100%;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
