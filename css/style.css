@@ -29,6 +29,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .gridInfoContainer .grid .col1 .imgContainer,
 .gridInfoContainer .grid .col2 .imgContainer,
 .gridInfoContainer .grid .col3 .imgContainer{
@@ -115,6 +116,62 @@
     color: white;
     font-weight: 500;
     border: none;
+}
+
+.section3Container{
+    width: 100%;
+    height: auto;
+    padding: 5rem;
+}
+.section3Container .upper{ 
+    width: 58%;
+}
+
+.section3Container .upper .head{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.section3Container .lower{
+    width: 100%;
+    display: flex;
+}
+.section3Container .lower .col{
+    width: 33%;
+    height: 38rem;
+    padding: 0;
+    margin: 1rem;
+}
+.section3Container .lower .col .row{
+    width: 100%;
+    height: 28%;
+    padding: 1rem;
+    border-bottom: 1px solid #d6d6d6;
+}
+.section3Container .lower .col .row .main,
+.section3Container .lower .col .row .details{
+    text-align: center;
+    width: 100%;
+}
+.section3Container .lower .col .row:last-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        /* border-top: 1px solid #d6d6d6; */
+}
+.section3Container .lower .col .row button{
+    width: 17rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D41230;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+.section3Container .lower .leftSide{
+   font-weight: 500;
 }
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
