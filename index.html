@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/icon-font.css">
     <link rel="stylesheet" href="css/style.css">
+    
 
 </head>
 <body>
@@ -241,15 +242,16 @@
                 </h1>
                 <p class="info">Set your investing goals online or talk with an advisor and set goals together. Either way, you'll have 24/7 access to Merrill's award-winning <sup> 3 </sup>service and online tools.</p>
             </div>
-            <div class="mainGrid">
-                <div class="header">
-                    <div class="leftSide">
-                        <p>Online with an advisor</p>
-                    </div>
-                    <div class="rightSide">
-                        <p>Online</p>
-                    </div>
+            <div id="myHeader" class="gridHeader">
+                <div class="leftSide">
+                    <p>Online with an advisor</p>
                 </div>
+                <div class="rightSide">
+                    <p>Online</p>
+                </div>
+            </div>
+            <div id="mainGrid" class="mainGrid">
+               
                 <div class="section">
                     <div class="upper">
                         <p>Minimum Investment</p>
@@ -263,7 +265,7 @@
                         </div>
                     </div>
                 </div>
-                 <div class="section">
+                 <div id="insertAfterMobile" class="section">
                     <div class="upper">
                         <p>Straightforward pricing</p>
                     </div>
@@ -281,24 +283,261 @@
                     </div>
                 </div> 
                 
+                <div id="compareProgramsContianerMobile" class="compareProgramsContianer">
+                    <div class="leftLine">
+                    </div>
+                    <div id="collapseItemsMobile" class="midLink">
+                        + Compare program features
+                    </div>
+                    <div class="rightLine">
+    
+                    </div>
+                </div>  
+                
             </div>
         </div>
 
         <!-- section3 mobile ends -->
+        
+        <!-- investment strategy starts -->
+        
+            <div class="investmentStrategy__SectionContainer">
+               <!-- <div class="popUpCover">
+                    <div class="contentContainer">
+                        <div class="crossBtnConainer">
+                            <div class="iconContainer">
+                                <img src="https://assets-global.website-files.com/5e6a6600949076ab67ab2487/5eab1d1e62e1a93d5ca3496e_cancellation.svg" alt="cross" />
+                            </div>
+                        </div>
+                        <div class="upperSection">
+                            <h1>
+                                US Large Cap Growth
+                            </h1>
+                            <p>
+                                Stocks of large companies with strong earnings growth. These big companies are typically more stable than smaller companies.
+                            </p>
+                        </div>
+                        <div class="lowerSection">
+                            <h3>WHAT WE BUY</h3>
+                            <p>PXWIX : Pax Ellevate Global Women’s Leadership Fund
+                            </p>
+                            <p>SUSA : iShares MSCI USA ESG Select ETF</p>
+                        </div>
+                    </div>
+                </div>  -->
+                <div class="investment_leftSide">
+                    <h1>Our investment strategy
+                    </h1>
+                    <p>We create an investment portfolio using a thoughtful mix of stock, bond, and alternative funds. This kind of diversification is intended to help reduce your portfolio's overall risk.
+                    </p>
+                    <a href="#">LEARN MORE</a>
+                </div>
+                <div class="investment_rightSide">
+                     <div class="upperSection">
+                        <div class="upper_leftSection">
+                            <div class="title">
+                                <div class="text">
+                                       <p> STOCK ETFS</p>
+                                </div>
+                                <div class="imgContainer">
+                                    <img src="https://assets-global.website-files.com/5e6a6600949076ab67ab2487/5e7878e49105fa1af1e707ac_info.svg" alt="infoIcon" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                 <div class="box">
+                                    <span>US LARGE CAP GROWTH</span>
+                                 </div>   
+                                 <div class="box">
+                                    <span>US Mid Cap Value</span>
+                                 </div>   
+                                 <div class="box">
+                                    <span>US Mid Cap Growth</span>
+                                 </div>   
+                                 <div class="box">
+                                    <span>US Small Cap Value</span>
+                                 </div>   
+                            </div>
+                            <div class="row">
+                                <div class="box">
+                                    <span>US Large Cap Value</span>
+                                </div>   
+                                <div class="box">
+                                    <span>US Small Cap Growth</span>
+                                </div>   
+                                <div class="box">
+                                    <span>Intl. Developed Markets Equity</span>
+                                </div>   
+                                <div class="box">
+                                    <span>Emerging Markets Equity</span>
+                                </div>   
+                            </div>
+                        </div>
+                        <div class="upper_rightSection">
+                            <div class="title">
+                                <div class="text">
+                                    <p>
+                                        ALT. ETFS
+                                    </p>
+                                </div>
+                                <div class="imgContainer">
+                                    <img src="https://assets-global.website-files.com/5e6a6600949076ab67ab2487/5e7878e49105fa1af1e707ac_info.svg" alt="infoIcon" />
+                                </div>
+                            </div> 
+                            <div class="row row1">
+                                <div class="box">
+                                    <span>US Real Estate</span>
+                                </div>   
+                            </div>
+                            <div class="row row2">
+                                <div class="box">
+                                    <span>Intl. Real Estate</span>
+                                </div>   
+                            </div>
+                        </div>
+                     </div>   
+                     <div class="lowerSection">
+                        <div class="title">
+                            <div class="text">
+                                <p>
+                                    BOND ETFS
+                                </p>
+                            </div>
+                            <div class="imgContainer">
+                                <img src="https://assets-global.website-files.com/5e6a6600949076ab67ab2487/5e7878e49105fa1af1e707ac_info.svg" alt="infoIcon" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="box">
+                                <span>US Short Term Bonds</span>
+                            </div>   
+                            <div class="box">
+                                <span>US Short Term Muni Bonds</span>
+                            </div>   
+                            <div class="box">
+                                <span>Intl. Developed Bonds</span>
+                            </div>   
+                            <div class="box">
+                                <span>US TIPS Bonds</span>
+                            </div>   
+                            <div class="box">
+                                <span>US Dollar Emerging Market Bonds</span>
+                            </div>   
+                        <!-- </div> -->
+                        <!-- <div class="row"> -->
+                            <div class="box">
+                                <span>US Intermed. Term Bonds</span>
+                            </div>   
+                            <div class="box">
+                                <span>US High Yield Muni Bonds</span>
+                            </div>   
+                            <div class="box">
+                                <span>Local Currency Emerging Market Bonds</span>
+                            </div>   
+                            <div class="box">
+                                <span>US Intermed. Term Muni Bonds</span>
+                            </div>   
+                            <div class="box">
+                                <span>FDIC Cash</span>
+                            </div>   
+                        <!-- </div> -->
+                        <!-- <div class="row"> -->
+                            <div class="box">
+                                <span>US High Yield Bonds</span>
+                            </div>   
+                        </div>
+                     </div>   
+                </div>
+            </div>
+
+        <!-- investment strategy ends -->
+
+        <!-- CTA sections starts -->
+
+            <div class="ctaSection">
+                <div class="tagline">
+                    <p>Where women invest.</p>
+                </div>
+                <div class="buttonContainer">
+                    <button>
+                        BECOME A MEMBER
+                    </button>
+                </div>
+            </div>
+        <!-- CTA sections ends -->
+
+        <!-- faq starts -->
+        <div class="faqContainer">
+            <div class="questionContainer">
+                <h1>Questions?</h1>
+            </div>
+        <button class="accordion">
+            <p>Who can invest with Ellevest?</p>
+            <div class="iconContainer">
+                <img class="iconImg" src="./images/dropIcon.svg" alt="dropIcon" />
+            </div>
+        </button>
+            <div class="panel">
+              <p>Ellevest was founded to help close the gender money gaps, but we welcome clients of all gender identities and expressions. Our digital platform uses gender-specific salary curves and longevity data to provide personalized recommendations and forecasts for your goals. Ellevest is only able to serve clients living in the contiguous U.S. as well as in Alaska and Hawaii.
+            </p>
+            </div>
+        <button class="accordion"><p>How does my investment portfolio work?</p>
+            <div class="iconContainer">
+                <img class="iconImg" src="./images/dropIcon.svg" alt="dropIcon" />
+            </div>
+        </button>
+            <div class="panel">
+              <p>The personalized investment plan we design for you will include low-cost ETFs and/or mutual funds that include stocks, bonds, and alternatives — all carefully chosen to give you the best chance to meet your goals.
+
+                Once you set up a deposit, we'll use your money to buy investments. Put together, they'll make up your diversified investment portfolio.
+                
+                As your investments' values go up (or down), the value of your overall portfolio will change, too. If you earn returns, then those returns also have the opportunity to earn returns, and that's called compounding. This is what makes it possible to grow your money by investing.
+                
+                As you invest with Ellevest, your portfolio will be rebalanced to align with the right asset allocation for your investment plan.</p>
+            </div>
+        <button class="accordion"><p>Does Ellevest charge a percentage fee on my investments?</p>
+            <div class="iconContainer">
+                <img class="iconImg" src="./images/dropIcon.svg" alt="dropIcon" />
+            </div>
+        </button>
+            <div class="panel">
+              <p>Nope! We don’t charge a separate advisory fee on your assets in the membership services. Fees for your advisory services, execution, custody and banking services (your Save and Spend accounts) are included in your membership fee.</p>
+            </div>
+        <button class="accordion"><p>How much does Ellevest’s money membership cost?</p>
+            <div class="iconContainer">
+                <img class="iconImg"  src="./images/dropIcon.svg" alt="dropIcon" />
+            </div>
+        </button>
+            <div class="panel">
+              <p>Ellevest has three levels of membership — you pick the one that fits your life best, and you can change anytime. The Ellevest Essential membership costs $1 a month, Ellevest Plus is $5 a month, and Ellevest Executive is $9 a month. See membership pricing options to learn about what members get at each level.</p>
+            </div>
+        <button class="accordion"><p>Can I withdraw my money at any time?</p>
+            <div class="iconContainer">
+                <img class="iconImg"  class src="./images/dropIcon.svg" alt="dropIcon" />
+            </div>
+        </button>
+            <div class="panel">
+              <p>Absolutely. You can withdraw part or all of the money from your taxable investment accounts at any time (as long as the money has been in your account for 5 business days).</p>
+         </div>
+         <div class="seeallFaqsContainer">
+            <p>SEE ALL FAQ</p>
+         </div>
+        </div>
+        <!-- faq ends -->
+            
 
         <!--Trust & Afford-->
-        <section class="section-trust">
+        <!-- <section class="section-trust">
             <div class="container">
                 <div class="trust">
                     <p class="trust-title">Trusted easy and affordable.</p>
                     <h3 class="heading heading-3 trust-summary">That's where we come in</h3>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--FEATURE-->
         <!--Debit Card-->
-        <section class="section-debitCard">
+        <!-- <section class="section-debitCard">
             <div class="container">
                 <div class="debit-card">
                     <div class="row">
@@ -320,10 +559,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--Fees-->
-        <section class="section-fees">
+        <!-- <section class="section-fees">
             <div class="container">
                 <div class="fees">
                     <div class="row">
@@ -335,10 +574,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--Cash-->
-        <section class="section-cash">
+        <!-- <section class="section-cash">
             <div class="container">
                 <div class="cash">
                     <div class="row">
@@ -353,10 +592,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--Paycheck-->
-        <section class="section-paycheck">
+        <!-- <section class="section-paycheck">
             <div class="container">
                 <div class="paycheck">
                     <div class="paycheck-top">
@@ -369,10 +608,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--Money-->
-        <section class="section-money">
+        <!-- <section class="section-money">
             <div class="container">
                 <div class="money">
                     <div class="row">
@@ -384,10 +623,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--Price-->
-        <section class="section-price">
+        <!-- <section class="section-price">
             <div class="container">
                 <div class="price">
                     <div class="price-top"><h4 class="heading heading-4 price-title">Mogan Stanley at your fingertips</h4></div>
@@ -405,10 +644,10 @@
                     <div class="price-bottom">Your annual asset-based advisory fee is based on your account balance and will be charged monthly. The advisory fee does not include,and is in addition to, the fees related to owning shares of exchange-traded funds and mutual funds.</div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--FAQ-->
-        <section class="section-faq">
+        <!-- <section class="section-faq">
             <div class="container">
                 <div class="faq">
                     <div class="faq-top"><h4 class="heading heading-4 faq-title">Getting into the details</h4></div>
@@ -467,15 +706,15 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
     </main>
 
     <!--Footer-->
     <footer class="footer container-fluid"> 
         <div class="footer-navbar">
-            <nav class="navbar navbar-expand navbar-dark bg-transparent">
-                <a class="navbar-brand" href="#"> <span class = "footer-nav__logo">fam.</span></a>
+            <nav class="navbar navbar-expand navbar-dark bg-transparent logoFooter">
+                <a class="navbar-brand " href="#"> <span class = "footer-nav__logo ">fam.</span></a>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto">
                         <a class="nav-item nav-link" href="#">
@@ -493,7 +732,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="footer-content-header">
-                        <h3 class = "display-4">We're on a mission to get more money in the hands of people — starting with you.</h3>
+                        <h3 class = "display-4">We're building the best investment firm, ever.
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -519,9 +759,13 @@
                 
                     <div class="col-sm-12 col-md-6">
                         <div class="footer_links">
-                            <a href="#" class="footer__link text-light font-weight-bold">Legal</a>
-                            <a href="#" class="footer__link text-light font-weight-bold">Privacy</a>
+                            <a href="#" class="footer__link text-light font-weight-bold">Help Center</a>
+                            <a href="#" class="footer__link text-light font-weight-bold">Press</a>
+                            <a href="#" class="footer__link text-light font-weight-bold">Careers</a>
                             <a href="#" class="footer__link text-light font-weight-bold">Terms</a>
+                            <a href="#" class="footer__link text-light font-weight-bold">Privacy</a>
+                            <a href="#" class="footer__link text-light 
+                            font-weight-bold">Legal</a>
                         </div>      
                     </div>
                 </div>
@@ -550,10 +794,12 @@
     </footer>
 
     
-
+   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="js/shared.js"></script>
+ 
+
     <script>
         $(document).ready(function(){
         
@@ -568,6 +814,61 @@
         });
               
     });
+
+
+window.onscroll = function() {console.log(isInViewport(mainGrid));
+};
+
+var header = document.getElementById("myHeader");
+var mainGrid = document.getElementById("mainGrid");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > header.offsetTop) {
+    // console.log("window.pageYOffset: ", window.pageYOffset);
+    // console.log("header.offsetTop: ", header.offsetTop);
+    // console.log("mainGrid.offsetTop: ", mainGrid.offsetTop);
+    // header.classList.add("sticky");
+  } else {
+    // header.classList.remove("sticky");
+    // console.log("ELSE");
+    // console.log("window.pageYOffset: ", window.pageYOffset);
+    // console.log("header.offsetTop: ", header.offsetTop);
+  }
+}
+function isOnScreen(elem) {
+	// if the element doesn't exist, abort
+	if( elem.length == 0 ) {
+		return;
+	}
+	var $window = jQuery(window)
+	var viewport_top = $window.scrollTop()
+	var viewport_height = $window.height()
+	var viewport_bottom = viewport_top + viewport_height
+	var $elem = jQuery(elem)
+	var top = $elem.offset().top + 200
+	var height = $elem.height()
+	var bottom = top + height  - 400
+
+	return (top >= viewport_top && top < viewport_bottom) ||
+	(bottom > viewport_top && bottom <= viewport_bottom) ||
+	(height > viewport_height && top <= viewport_top && bottom >= viewport_bottom)
+}
+
+jQuery( document ).ready( function() {
+	window.addEventListener('scroll', function(e) {
+		if( isOnScreen( jQuery( '#mainGrid' ) ) ) { /* Pass element id/class you want to check */
+		console.log("IS IN VIEWPORT")
+            header.classList.add("sticky");
+            // header.style.display = "flex";
+
+ 		}	
+         else{
+            header.classList.remove("sticky");
+            // header.style.display = "none";
+         }
+	});
+});
    /*  function scrollFunction() {
 
             // All Vars Declarations
