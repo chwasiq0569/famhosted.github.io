@@ -316,11 +316,13 @@
     align-items: center;
     padding: 2rem;
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 .investmentStrategy__SectionContainer .investment_leftSide,
 .investmentStrategy__SectionContainer .investment_rightSide{
     width: 50%;
     height: 100%;
+ 
 }
 .investmentStrategy__SectionContainer .investment_rightSide{
     display: flex;
@@ -331,6 +333,9 @@
     width: 40%;
     padding-left: 2rem;
     padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .investmentStrategy__SectionContainer .investment_leftSide p:nth-child(2){
     margin-top: 2rem;
@@ -1080,18 +1085,20 @@
     position: absolute;
     z-index: 5;
     width: 96%;
-    height: 65rem;
-    border: 5px solid red;
+    height: 62rem;
     background-color: rgba(0,0,0,.7);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-left: auto; */
 }
 .popUpCover .contentContainer{
-    width: 50%;
-    height: 100%;
-    border: 2px solid white;
+    background-color: rgb(37, 149, 145);
+    width: 33%;
+    height: auto;
+    font-family: 'Playfair Display', serif;
+    padding: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 .popUpCover .contentContainer .crossBtnConainer{
     width: 100%;
@@ -1111,13 +1118,36 @@
 .popUpCover .contentContainer .upperSection{
     width: 100%;
     height: 56%;
-    border: 1px solid blue;
+    border-bottom: 1px solid rgba(197, 190, 190, 0.9);
+    padding-bottom: 2rem;
 }
 .popUpCover .contentContainer .lowerSection{
     width: 100%;
     height: 40%;
-    border: 1px solid yellow;
+    padding-top: 2rem;
 }
 .popUpCover .contentContainer .upperSection h1{
-    font-size: 5rem;
+    font-size: 48px;
+    color: hsla(20,0%,100%,.9);
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+.popUpCover .contentContainer .upperSection p{
+    color: #242222;
+    font-size: 1.75rem;
+    line-height: 1.5;
+}
+.popUpCover .contentContainer .lowerSection{
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsla(20,0%,100%,.9);
+    padding-top: 3rem;
+}
+.popUpCover .contentContainer .lowerSection h3{
+    font-weight: 500;
+    padding-bottom: 1rem;
+    letter-spacing: 2px;
+}
+.popUpCover .contentContainer .lowerSection p{
+    font-size: 1.25rem;
+    font-weight: 200;
 }
