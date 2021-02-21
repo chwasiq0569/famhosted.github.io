@@ -507,3 +507,21 @@ let box = document.querySelectorAll(".box");
                                           })
 })
 console.log(contentArr);
+
+
+document.getElementById("openDisclosures").addEventListener("click", function(){
+    document.getElementById("whiteModal").style.display = "flex";
+    setTimeout(function(){
+        document.getElementById("whiteModal").style.opacity = "1";
+        document.getElementById("whiteModal").style.transition = "all 0.5s ease";
+    }, 200)
+    
+})
+
+document.getElementById("closeWhiteModal").addEventListener("click", function(){
+    document.getElementById("whiteModal").style.opacity = "0";
+    document.getElementById("whiteModal").style.transition = "all 0.5s ease";
+    setTimeout(function(){
+        document.getElementById("whiteModal").style.display = "none";
+    }, 200)
+})

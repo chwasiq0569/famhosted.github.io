@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/icon-font.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
      <!--Top Navbar-->
@@ -41,6 +42,24 @@
     </header>
 
     <main>
+
+       <div  id="whiteModal" class="modalWhite">
+            <div class="innerModal">
+                <div class="crossSection">
+                    <div class="imgContainer">
+                        <img id="closeWhiteModal" src="https://altruist.com/wp-content/themes/new-altruist/resources/images/close.svg" alt="crossIcon" />
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+                        The chart assumes hypothetical growth of $100,000 over 30 years with annualized returns of 5%, representing a portfolio without an advisor, and 8%, representing a portfolio with an advisor. Results assume reinvestment of all dividends and interest. Performance is shown gross of fees. Actual performance may vary significantly.
+                    </p>
+                    <p>Source: Vanguard, Putting a value on your value, February 2019.</p>
+                </div>
+            </div>
+        </div> 
+
+
         <!--Hero-->
         <section id="id-hero">
             <div class="container">
@@ -70,23 +89,45 @@
         <!-- chartSection starts -->
 
         <div class="chartSection__Container">
-                <div class="upperSection">
+                <div data-aos="fade-up" class="upperSection">
                     <h1>
-                        When your financial advisor does their best work, your money could grow up to 3% more each year. 1
+                        When your financial advisor does their best work, your money could grow up to 3% more each year. <sup>1</sup>
                     </h1>
                     <p>What does 3% look like over time?
                     </p>
                 </div>
-                <div class="lowerSection">
-                    <div>
-                        <div id="shiva"><span style="color: white;" class="count">898076</span></div>
+                <div data-aos="fade-up" id="mainChart" class="lowerSection">
+                    <div class="counters"> 
+                        <div id="leftCount">
+                            <div class="currency">
+                                <p>$</p><p class="count">397076</p>
+                            </div>
+                           <p class="countInfo">No advisor</p>
+                        </div>
+                        <div id="rightCount">
+                            <div class="currency">
+                                <p>$</p><p class="count">397076</p>
+                            </div>
+                            
+                            <p class="countInfo">With advisor</p>
+                        </div>
                     </div>
                     <div class="chart-container">
                         <canvas id="myChart" ></canvas>
                     </div>
                 </div>
-        </div>
-
+                <div class="belowLine">
+                    <div>Year 1</div>
+                    <div>Growth of $100,000</div>
+                    <div>Year 30</div>
+                </div>
+                <div id="openDisclosures" class="disclosure">
+                    <div class="disc">
+                        <span>1</span>
+                        <span>Click here for disclosure</span>
+                    </div>
+                </div>
+            </div>
 
         <!-- chartSection ends-->
 
@@ -303,7 +344,16 @@
                         </div>
                     </div>
                 </div> 
-                
+                <!-- buttons -->
+                <div class="getStartedButtons">
+                    <div class="leftSide">
+                        <button>Get Started</button>
+                    </div>
+                    <div class="rightSide">
+                        <button>Get Started</button>
+                    </div>
+                </div>
+                <!-- buttons -->
                 <div id="compareProgramsContianerMobile" class="compareProgramsContianer">
                     <div class="leftLine">
                     </div>
@@ -818,6 +868,7 @@
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
 
     <script src="js/shared.js"></script>
@@ -825,19 +876,11 @@
  
 
     <script>
-$(function(){
-$('.count').each(function () {
-  $(this).prop('Counter',0).animate({
-      Counter: $(this).text()
-  }, {
-      duration: 4000,
-      easing: 'swing',
-      step: function (now) {
-          $(this).text(Math.ceil(now).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
-      }
-  });
-});
-});
+            AOS.init({
+                duration: 2500,
+                offset: 5,
+            });
+            
 
 
         $(document).ready(function(){
@@ -886,7 +929,6 @@ jQuery( document ).ready( function() {
 		if( isOnScreen( jQuery( '#mainGrid' ) ) ) { /* Pass element id/class you want to check */
 		console.log("IS IN VIEWPORT")
             header.classList.add("sticky");
-            // header.style.display = "flex";
 
  		}	
          else{
@@ -895,6 +937,7 @@ jQuery( document ).ready( function() {
          }
 	});
 });
+
 
     </script>
 </body>
