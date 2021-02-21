@@ -34,8 +34,45 @@
     padding-bottom: 5rem;
 }
 
-
-
+.chartSection__Container{
+    width: 100%;
+    height: 85rem;
+    background-color: #171A1C;
+    display: flex;
+    flex-direction: column;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+.chartSection__Container .upperSection{
+    width: 100%;
+    height: 42.5%;
+    border:2px solid red;
+}
+.chartSection__Container .upperSection h1{
+    width: 60%;
+    line-height: 2;
+    color: white;
+}
+.chartSection__Container .upperSection p{
+    width: 60%;
+    font-size: 1.75rem;
+    color: white;
+    margin-top: 3rem;
+}
+.chartSection__Container .lowerSection{
+    width: 100%;
+    height: 57.5%;
+    border:2px solid red;
+}
+.chart-container{
+    width: 100%;
+    height: 100%;
+}
+#myChart{
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+}
 .gridInfoContainer{
     width: 100%;
     text-align: center;
@@ -316,7 +353,8 @@
     align-items: center;
     padding: 2rem;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    padding-top: 8rem;
+    /* padding-bottom: 16rem !important; */
 }
 .investmentStrategy__SectionContainer .investment_leftSide,
 .investmentStrategy__SectionContainer .investment_rightSide{
@@ -331,15 +369,19 @@
 }
 .investmentStrategy__SectionContainer .investment_leftSide{
     width: 40%;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+.investmentStrategy__SectionContainer .investment_leftSide h1{
+    font-size: 40px;
+}
 .investmentStrategy__SectionContainer .investment_leftSide p:nth-child(2){
     margin-top: 2rem;
     margin-bottom: 2rem;
+    font-size: 16px;
 }
 .investmentStrategy__SectionContainer .investment_rightSide .upperSection{
    width: 54rem;
@@ -462,6 +504,7 @@
     width: 100%;
     height: 30rem;
     background-color: #034b45;
+    margin-top: 5rem;
 }
 .ctaSection .tagline{
     width: 100%;
@@ -889,6 +932,8 @@
         flex-direction: column;
         height: 100%;
         justify-content: center;
+        /* padding-top: 0rem !important;
+        padding-bottom: 0rem !important; */
     } 
     .investmentStrategy__SectionContainer .investment_leftSide,
     .investmentStrategy__SectionContainer .investment_rightSide{
@@ -962,6 +1007,9 @@
 
     .investmentStrategy__SectionContainer .investment_rightSide{
         height: 60%;
+    }
+    .popUpCover{
+        height: 120rem !important;
     }
 }
 
@@ -1090,15 +1138,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 .popUpCover .contentContainer{
     background-color: rgb(37, 149, 145);
-    width: 33%;
+    width: 40rem;
     height: auto;
     font-family: 'Playfair Display', serif;
     padding: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
+    position: relative;
+    top: 5%;
+    /* transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew( 0deg, 0deg);
+    transform-style: preserve-3d; */
+    transition: all 0.25s ease-out !important;
 }
 .popUpCover .contentContainer .crossBtnConainer{
     width: 100%;
@@ -1114,6 +1168,7 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    cursor: pointer;
 }
 .popUpCover .contentContainer .upperSection{
     width: 100%;
@@ -1150,4 +1205,8 @@
 .popUpCover .contentContainer .lowerSection p{
     font-size: 1.25rem;
     font-weight: 200;
+}
+
+.box{
+    cursor: pointer;
 }
