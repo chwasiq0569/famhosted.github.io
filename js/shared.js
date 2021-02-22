@@ -489,17 +489,6 @@ let box = document.querySelectorAll(".box");
     document.querySelector(".contentContainer").style.position = "relative";
     document.querySelector(".contentContainer").style.top = "0%";
    }, 500)
-   
-
-//    document.querySelector(".contentContainer").style.transform = "translate3d(0px, 0px, 0px)";
-//     document.querySelector(".contentContainer").style.transform = "scale3d(1, 1, 1)";
-    // document.querySelector(".contentContainer").style.transform = "rotateX(0deg)";
-    // document.querySelector(".contentContainer").style.transform = "rotateY(0deg)";
-    // document.querySelector(".contentContainer").style.transform = "rotateZ(0deg)";  
-    // document.querySelector(".contentContainer").style.transform = "skew( 0deg, 0deg)";  
-    // document.querySelector(".contentContainer").style.transformStyle = "preserve-3d";  
-
-
    document.getElementById("closePopUp").addEventListener("click", function(){
    document.querySelector(".popUpCover").style.display = "none";
    document.querySelector(".contentContainer").style.top = "5%";

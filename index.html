@@ -19,21 +19,21 @@
         <div class="header">
             <nav class="navbar navbar-expand-lg main-nav">
                 <a class="navbar-brand main-nav__lead" href="#"><span class="main-nav__logo">fam.</span></a>
-                  <button class="navbar-toggler navbar-light main-nav__btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-light main-nav__btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon main-nav__icon"></span>
                   </button>
                 <div class="collapse navbar-collapse main-nav__collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto main-nav__items">
-                        <li class="nav-item" id= "navitem1"><a class="nav-link main-nav__link" href="#id-getstart"><span class="navactive">Get started</span></a></li>
                         <li class="nav-item main-nav__item">
                             <button class="nav-link main-nav__link main-nav__close-btn navItemHide" type="button">
                                 <span class="main-nav__close-img"></span>
                             </button>
                         </li>
-                        <li class="nav-item"><a class="nav-link main-nav__link" href="#id-learn">Pact</a></li>
-                        <li class="nav-item"><a class="nav-link main-nav__link" href="#id-learn">Purpose</a></li>
+                        <li class="firstLink nav-item"><a class="nav-link main-nav__link" href="#id-learn">How it works</a></li>
                         <li class="nav-item"><a class="nav-link main-nav__link" href="#id-learn">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link main-nav__link" href="#id-learn">FAQ</a></li>
                         <li class="nav-item"><a class="nav-link main-nav__link" href="#id-signin">Sign in</a></li>
+                        <li class="nav-item" id= "navitem1"><a class="nav-link main-nav__link" href="#id-getstart"><span class="navactive">Join Fam</span></a></li>
                     </ul>
                     <p class="navCopyright navItemHide">&copy; 2021 Form Advisory Group</p>
                 </div>
@@ -43,7 +43,7 @@
 
     <main>
 
-       <div  id="whiteModal" class="modalWhite">
+       <div id="whiteModal" class="modalWhite">
             <div class="innerModal">
                 <div class="crossSection">
                     <div class="imgContainer">
@@ -67,7 +67,7 @@
                     <div class="hero-left">
                         <h1 class="heading heading-1 hero-title"><span class="underlined">Your</span> personal money manager</h1>
                         <p class="hero-subtitle">It's not just easy. It's smart and affordable, too.</p>
-                        <a href="#" class="hero-btn__start" id="btn_getstart">Get started</a>
+                        <a href="#" class="hero-btn__start" id="btn_getstart">Join Fam</a>
                     </div>
                 </div>
             </div>
@@ -870,20 +870,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="js/shared.js"></script>
     <script src="js/chart.js"></script>
  
 
     <script>
-            AOS.init({
-                duration: 2500,
-                offset: 5,
-            });
-            
 
-
-        $(document).ready(function(){
+$(document).ready(function(){
         
         $(".collapse.show").each(function(){
             $(this).prev(".card-header").find(".accDir").css("transform", "rotate(90deg)");
@@ -897,7 +891,11 @@
               
     });
 
-
+AOS.init({
+    duration: 2500,
+    offset: 5,
+});
+            
 window.onscroll = function() {console.log(isInViewport(mainGrid));
 };
 
