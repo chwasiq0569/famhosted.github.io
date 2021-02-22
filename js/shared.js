@@ -458,7 +458,7 @@ let box = document.querySelectorAll(".box");
    if(i >= 8 && i < 10){
     document.querySelector(".contentContainer").style.backgroundColor = "#a58832";
    } 
-   else if( i >= 11 && i < 21){
+   else if( i >= 10 && i < 21){
     document.querySelector(".contentContainer").style.backgroundColor = "#ef7622";
     
    }
