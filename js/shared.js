@@ -142,6 +142,11 @@ let mobileViewGridData = `
             <img src="./images/checkmark.png" alt="checkmark" />
         </div>
     </div>
+    <div class="lower_lastSide">
+        <div class="imgContainer">
+            <img src="./images/checkmark.png" alt="checkmark" />
+        </div>
+    </div>
 </div>
 </div> 
 <div class="section">
@@ -155,6 +160,11 @@ let mobileViewGridData = `
             </div>
     </div>
     <div class="lower_rightSide">
+        <div class="imgContainer">
+            <img src="./images/checkmark.png" alt="checkmark" />
+        </div>
+    </div>
+    <div class="lower_lastSide">
         <div class="imgContainer">
             <img src="./images/checkmark.png" alt="checkmark" />
         </div>
@@ -176,6 +186,11 @@ let mobileViewGridData = `
             <img src="./images/checkmark.png" alt="checkmark" />
         </div>
     </div>
+    <div class="lower_lastSide">
+        <div class="imgContainer">
+            <img src="./images/checkmark.png" alt="checkmark" />
+        </div>
+    </div>
 </div>
 </div> 
 <div class="section">
@@ -193,6 +208,11 @@ let mobileViewGridData = `
             <img src="./images/checkmark.png" alt="checkmark" />
         </div>
     </div>
+    <div class="lower_lastSide">
+        <div class="imgContainer">
+            <img src="./images/checkmark.png" alt="checkmark" />
+        </div>
+    </div>
 </div>
 </div> 
 <div class="section">
@@ -206,6 +226,11 @@ let mobileViewGridData = `
             </div>
     </div>
     <div class="lower_rightSide">
+        <div class="imgContainer">
+            <img src="./images/checkmark.png" alt="checkmark" />
+        </div>
+    </div>
+    <div class="lower_lastSide">
         <div class="imgContainer">
             <img src="./images/checkmark.png" alt="checkmark" />
         </div>
@@ -279,6 +304,10 @@ collapseItems.addEventListener("click", function(){
     $(middleContent).insertAfter("#insertAfter2");
     investingGuide_rightSide.style.height = 135 + 'rem';
     $(rightSideContent).insertAfter("#insertAfter3");
+
+    investingGuide_lastSide.style.height = 135 + 'rem';
+    $(rightSideContent).insertAfter("#insertAfter4");
+
     document.getElementById('compareProgramsContianer').innerHTML = `<span>Get <a href="#">more information</a> on how Merrill Guided Investing combines the power of technology and human insight and investment expertise.</span>`
 })
 
@@ -312,148 +341,108 @@ let contentArr = [
     {
         tagline: "US Large Cap Growth",
         info: "Stocks of large companies with strong earnings growth. These big companies are typically more stable than smaller companies.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>PXWIX : Pax Ellevate Global Women’s Leadership Fund
-        </p>
-        <p>VTI : Vanguard Total Stock Market ETF
-        </p>
-        <p>SUSA : iShares MSCI USA ESG Select ETF</p>`
+        lowerContent: ``
     },
     {
         tagline: "US Mid Cap Value",
         info: "Stocks of mid-size companies with low valuations, typically worth between $2 billion and $10 billion.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>VO : Vanguard Mid Cap ETF
-        </p>
-        <p>VOE : Vanguard Mid Cap Value ETF
-        </p>`
+        lowerContent: ``
     },
     {
         tagline: "US Mid Cap Growth",
         info: "Stocks of mid-sized companies, typically worth between $2 billion and $10 billion with strong earnings growth.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>VO : Vanguard Mid Cap ETF
-        </p>`
+        lowerContent: ``
     },
     {
         tagline: "US Small Cap Value",
         info: "Stocks of smaller companies with lower valuations. While smaller companies can have a greater risk than larger, more established ones, they can also have greater long-term growth potential.",
         secHead: "WHAT WE BUY",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>VB : Vanguard Small Cap ETF
-        </p><p>VBR : Vanguard Small Cap Value ETF
-        </p>`
+        lowerContent: ``
     },
     {
         tagline: "US Large Cap Value",
         info: "Stocks of large companies that trade at low prices relative to their peers. These big companies are typically more stable than smaller companies and generally deliver dividends.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>PXWIX : Pax Ellevate Global Women’s Leadership Fund</p>
-        <p>VTV : Vanguard Value ETF</p>
-        <p>VTI : Vanguard Total Stock Market ETF</p>
-        <p>SUSA : iShares MSCI USA ESG Select ETF</p>`
+        lowerContent: ``
     },
     {
         tagline: "US Small Cap Growth",
         info: "Stocks of smaller companies, typically worth less than $2 billion. These smaller companies can have greater long-term growth potential than larger companies, which can also mean greater risk.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>VB : Vanguard Small Cap ETF</p>`
+        lowerContent: ``
     },
     {
         tagline: "Intl. Developed Markets Equity",
         info: "Stocks of companies headquartered in developed economies like Europe, Australia and Japan, representing a large part of the world economy. They have a risk and rate of return similar to that of US Total Stock Market but can provide diversification of investment risk.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>PXWIX : Pax Ellevate Global Women’s Leadership Fund</p>
-        <p>ESGD : iShares MSCI EAFE</p>
-        <p>VEA : Vanguard FTSE Developed Markets ETF</p>`
+        lowerContent: ``
     },
     {
         tagline: "Emerging Markets Equity",
         info: "Stocks of companies in developing economies, such as Brazil, India, China, and South Africa. Because the economies of these countries are in a growth phase, these stocks generally have both higher risk and return, as compared to more developed markets.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>ESGE : iShares MSCI EM</p>
-        <p>VWO : Vanguard FTSE Emerging Markets ETF</p>`
+        lowerContent: ``
     },
     {
         tagline: "US Real Estate",
         info: "Investments in commercial properties, apartment complexes, and retail space, in the form of real estate investment trusts (“REITs”). Rents are paid out as dividends; REITs provide income, inflation protection, and diversification benefits.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>VNQ : Vanguard REIT ETF</p>`
+        lowerContent: ``
     },
     {
         tagline: "Intl. Real Estate",
         info: "Investments in commercial properties, apartment complexes, and retail space outside of the US, in the form of real estate investment trust (“REITs”). Rents are paid out as dividends; REITs provide income, inflation protection, and diversification benefits.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>VNQI : Vanguard Global ex-US Real Estate ETF</p>`
+        lowerContent: ``
     },
     {
         tagline: "US Short Term Bonds",
         info: "US government bonds, high-quality corporate bonds, and high-quality international US dollar-denominated bonds with maturities of 1-5 years.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>BSV : Vanguard Short Term Bond ETF</p>`
+        lowerContent: ``
     },
     {
         tagline: "US Short Term Muni Bonds",
         info: "Bonds issued by US state and local governments with remaining maturities of between 1 and 5 years. Their interest is not subject to federal taxes, and their shorter maturities reduce risk.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>SHM : SPDR Nuveen Barclays Short Term Municipal Bond ETF</p>
-        <p>SUB : iShares Short-Term National Muni Bond ETF</p>`
+        lowerContent: ``
     },
     {
         tagline: "Intl. Developed Bonds",
         info: "Investment-grade bonds issued by non-US governments such as those in Western Europe, Australia, and Japan. Their credit quality is high, and they provide diversification of risk.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>BNDX : Vanguard Total International Bond ETF</p>`
+        lowerContent: ``
     },
     {
         tagline: "US TIPS Bonds",
         info: "(Treasury Inflation-Protected) Bonds issued by the US government. Their principal value is indexed to inflation, which provides protection in an inflationary environment.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>SCHP : Schwab U.S. TIPS ETF™</p>`
+        lowerContent: ``
     },
     {
         tagline: "US Dollar Emerging Market Bonds",
         info: "Bonds issued by governments in emerging market countries such as China, India and Russia. They offer higher yields than developed market bonds given their greater risk.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>EMB : iShares JPMorgan Emerging Markets Bond ETF</p>`
+        lowerContent: ``
     },
     {
         tagline: "US Intermed. Term Bonds",
         info: "A broad index of US investment-grade taxable fixed income securities with maturities of at least one year.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>ACCSX : Access Community Capital Fund</p>
-        <p>BND : Vanguard Total Bond Market ETF</p>`
+        lowerContent: ``
     },
     {
         tagline: "US High Yield Muni Bonds",
         info: "Bonds issued by US state and local governments with lower credit ratings. Because of these lower ratings, these bonds pay higher interest. The interest they pay is exempt from federal taxes.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>HYD : VanEck Vectors High-Yield Municipal Bond ETF</p>`
+        lowerContent: ``
     },
     {
         tagline: "Local Currency Emerging Market Bonds",
         info: "Bonds issued in the local currency of emerging market countries such as China, India and Russia. They offer higher yields than developed market bonds given their greater risk.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>EMLC : VanEck Vectors Local Currency Emerging Markets Bond ETF</p>`
+        lowerContent: ``
     },
     {
         tagline: "US Intermed. Term Muni Bonds",
         info: "Bonds issued by US state and local governments. While not quite as safe as US Treasuries, the credit risk is quite low, and municipal bonds’ interest is exempt from federal taxes.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>VTEB : Vanguard Tax-Exempt Bond ETF</p>
-        <p>MUB : iShares National Muni Bond ETF</p>`
+        lowerContent: ``
     },
     {
         tagline: "FDIC Cash",
         info: "Cash held in banks insured by the Federal Deposit Insurance Corporation. It earns a very low-interest rate because it is considered very low risk.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>FDIC Cash</p>`
+        lowerContent: ``
     },
     {
         tagline: "US High Yield Bonds",
         info: "Bonds of firms with lower credit ratings than investment-grade corporate, Treasury, and municipal bonds. Because of their lower credit ratings, these bonds pay higher interest.",
-        lowerContent: ` <h3>WHAT WE BUY</h3>
-        <p>SPDR Barclays Capital High Yield Bond ETF</p>`
+        lowerContent: ` `
     },
 ]
 
@@ -467,13 +456,15 @@ let box = document.querySelectorAll(".box");
 
    console.log(e.currentTarget, i);
    if(i >= 8 && i < 10){
-    document.querySelector(".contentContainer").style.backgroundColor = "#d29f13";
+    document.querySelector(".contentContainer").style.backgroundColor = "#a58832";
    } 
    else if( i >= 11 && i < 21){
-    document.querySelector(".contentContainer").style.backgroundColor = "#5f8fb4";
+    document.querySelector(".contentContainer").style.backgroundColor = "#ef7622";
+    
    }
    else{
-    document.querySelector(".contentContainer").style.backgroundColor = "#259591";  
+    document.querySelector(".contentContainer").style.backgroundColor = "#1f55a5";
+     
    }
 
    document.querySelector(".popUpCover").style.display = "flex";
