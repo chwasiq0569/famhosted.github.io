@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        main{
+            /* background-color: #e7e7e7 !important; */
+        }
+    </style>
 
 </head>
 <body>
@@ -30,9 +35,9 @@
                                 <span class="main-nav__close-img"></span>
                             </button>
                         </li>
-                        <li class="firstLink nav-item"><a class="nav-link main-nav__link" href="#id-learn">How it works</a></li>
-                        <li class="nav-item"><a class="nav-link main-nav__link" href="#id-learn">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link main-nav__link" href="#id-learn">FAQ</a></li>
+                        <!-- <li class="firstLink nav-item"><a class="nav-link main-nav__link" href="#id-learn">How it works</a></li> -->
+                        <!-- <li class="nav-item"><a class="nav-link main-nav__link" href="#id-learn">Pricing</a></li> -->
+                        <!-- <li class="nav-item"><a class="nav-link main-nav__link" href="#id-learn">FAQ</a></li> -->
                         <li class="nav-item"><a class="nav-link main-nav__link" href="#id-signin">Sign in</a></li>
                         <li class="nav-item" id= "navitem1"><a class="nav-link main-nav__link" href="#id-getstart"><span class="navactive">Join Fam</span></a></li>
                     </ul>
@@ -64,9 +69,9 @@
         <!--Hero-->
         <section id="id-hero">
             <div class="container">
-                <div class="hero">
+                <div class="hero" >
                     <div class="hero-left">
-                        <h1 class="heading heading-1 hero-title"><span class="underlined">Your</span> personal money manager</h1>
+                        <h1 class="heading heading-1 hero-title"  ><span class="underlined">Your</span> personal money manager</h1>
                         <p class="hero-subtitle">It's not just easy. It's smart and affordable, too.</p>
                         <a href="#" class="hero-btn__start" id="btn_getstart">Join Fam</a>
                     </div>
@@ -117,7 +122,7 @@
                         <canvas id="myChart" ></canvas>
                     </div>
                 </div>
-                <div class="belowLine">
+                <div data-aos="fade-up" class="belowLine">
                     <div>Year 1</div>
                     <div>Growth of $100,000</div>
                     <div>Year 30</div>

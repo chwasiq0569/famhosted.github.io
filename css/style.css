@@ -38,6 +38,7 @@ html{
 html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Times, serif;color:black;position:relative}.accord-container{width:75%;margin:auto}.accord-img__arrow{font-size:30px;font-weight:bold;position:relative;top:5px;color:#0084ff}.accord-btn{color:black;font-size:1.7rem;font-weight:bold;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-top:1rem;padding-bottom:1rem}.accord-btn:hover,.accord-btn:active{color:black;text-decoration:none}.accord-btn:focus{text-decoration:none}
 .header{
     background-color:#e7e7e7;
+    /* background-color:#a3a6a8; */
 }
 #navbarSupportedContent{
     display: flex;
@@ -96,7 +97,48 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     height:2px;
     background-color:black
 }
-.main-nav__icon::before{width:3rem;height:2px;background-color:black;margin-top:-0.8rem;content:"";display:block}.main-nav__icon::after{width:1.5rem;height:2px;background-color:black;margin-top:1.4rem;content:"";display:block;margin-left:1.5rem}.main-nav__btn{border-radius:100%;padding:2.2rem 1.6rem;margin-right:0.5rem;margin-top:1rem}.main-nav__btn:focus{outline:none}@media only screen and (max-width: 991px){.main-nav #navitem1{display:none}.main-nav__items{background-color:white;margin-right:0;width:100%;min-width:200px;text-align:right;position:relative;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.main-nav__item:nth-child(2){margin-top:5rem}.main-nav__collapse:not(.show){-webkit-transform:translateX(500px);transform:translateX(500px);-webkit-transition:all 0.2s;transition:all 0.2s;-webkit-transition-timing-function:cubic-bezier(0.17, 0.67, 0.83, 0.67);transition-timing-function:cubic-bezier(0.17, 0.67, 0.83, 0.67);position:absolute;top:0;right:0;height:100vh;width:90%;background-color:white}.main-nav__collapse{padding:2rem;background-color:white;-webkit-transition:all 0.5s;transition:all 0.5s;position:absolute;top:0;right:0;height:100vh;width:80%;-webkit-transform:translateX(0px);transform:translateX(0px)}
+.main-nav__icon::before{width:3rem;height:2px;background-color:black;margin-top:-0.8rem;content:"";display:block}.main-nav__icon::after{width:1.5rem;height:2px;background-color:black;margin-top:1.4rem;content:"";display:block;margin-left:1.5rem}.main-nav__btn{border-radius:100%;padding:2.2rem 1.6rem;margin-right:0.5rem;margin-top:1rem}.main-nav__btn:focus{outline:none}
+@media only screen and (max-width: 991px){
+    .main-nav #navitem1{display:none}
+    .main-nav__items{
+        background-color:white;
+        margin-right:0;
+        width:100%;
+        min-width:200px;
+        text-align:right;
+        position:relative;
+        -webkit-box-align:end;
+        -ms-flex-align:end;
+        align-items:flex-end
+    }
+    .main-nav__item:nth-child(2){
+        margin-top:5rem
+    }
+    .main-nav__collapse:not(.show){
+        -webkit-transform:translateX(500px);
+        transform:translateX(500px);
+        -webkit-transition:all 0.2s;
+        transition:all 0.2s;-webkit-transition-timing-function:cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        transition-timing-function:cubic-bezier(0.17, 0.67, 0.83, 0.67);position:absolute;
+        top:0;
+        right:0;
+        height:100vh;
+        width:90%;
+        background-color:white;
+        display: none !important;
+    }
+        .main-nav__collapse{
+            padding:2rem;background-color:white;
+            -webkit-transition:all 0.5s;
+            transition:all 0.5s;
+            position:absolute;
+            top:0;
+            right:0;
+            height:100vh;
+            width:80%;
+            -webkit-transform:translateX(0px);
+            transform:translateX(0px)
+        }
 .firstLink{
     margin-top: 8rem;
 }
@@ -120,8 +162,10 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 #id-hero{
     /* background-color:#efeae1; */
     background-color: #e7e7e7;
-    /* background-image:url(../images/hero_final.png);background-position:right 0 bottom 0; */
-    background-repeat:no-repeat;background-size:50rem auto
+    background-image:url(../images/hand_noshadow.png);
+    background-position:right 0 bottom 0;
+    background-repeat:no-repeat;
+    background-size:60rem auto;
 }
     @media only screen and (max-width: 1199px){
         #id-hero{
@@ -142,8 +186,8 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 /*  */
 .footer{
  background-color: rgb(32, 33, 36);
- padding-left: 7rem;
- padding-right: 7rem;
+ padding-left: 4rem;
+ padding-right: 4rem;
 
 }
 .logoFooter{
@@ -171,32 +215,35 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     background-color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-left: 8rem;
     padding-right: 8rem;
     padding-top: 15rem;
     padding-bottom: 5rem;
 }
 .chartSection__Container .upperSection{
-    width: 100%;
+    width: 70%;
     height: 50%;
+    text-align: center;
 }
 .chartSection__Container .upperSection h1{
-    width: 60%;
+    width: 100%;
     line-height: 1.5;
     color: #262B2D;
-    font-family: BegumSans;
+    font-family: "Montserrat";
     font-weight: 600;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    text-align: center;
 }
 .chartSection__Container .upperSection p{
-    width: 60%;
+    width: 100%;
     font-size: 1.75rem;
     color: #262B2D;
     margin-top: 3rem;
     font-family: AktivGroteskCorp;
 }
 .chartSection__Container .lowerSection{
-    width: 100%;
+    width: 70%;
     height: 45%;
     position: relative;
 }
@@ -254,7 +301,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 }
 .belowLine{
     height: 5%;
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     /* color: #a3a6a8; */
@@ -498,36 +545,51 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     height: 100%;
     padding: 4rem;
     /* background-color: #F5F5F5; */
-    background-color: #e7e7e7;
 }
 .section3Container .upper{ 
-    width: 58%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e7e7e7;
 }
 .section3Container .upper .tophead{
+    width: 58%;
     font-weight: 500;
     font-family: AktivGroteskCorp;
+    text-align: center;
 }
 .section3Container .upper .head{
     margin-top: 2rem;
+    width: 58%;
     margin-bottom: 2rem;
     font-family: BegumSans;
     font-weight: 600;
+    text-align: center;
 }
 .section3Container .upper .info{
     font-family: AktivGroteskCorp;
     font-size: 1.5rem;
+    width: 58%;
+    text-align: center;
 }
 .section3Container .lower{
     width: 100%;
     display: flex;
     padding: 0;
+    background-color: #e7e7e7;
+    padding-bottom: 8rem;
+    padding-right: 2rem;
 }
 .section3Container .lower .col{
     width: 25%;
     /* height: 45rem; */
     height: 45rem;
     padding: 0;
-    margin: 1rem;
+    margin: 0.5rem;
     padding-left: 3rem;
     display: flex;
     flex-direction: column;
@@ -629,8 +691,10 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
     text-align: center;
+    background-color: #e7e7e7;
+    padding-bottom: 2rem;
 }
 .compareProgramsContianer span{
     width: 100%;
@@ -840,7 +904,8 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     width: 100%;
     height: 30rem;
     /* background-color: #034b45; */
-    background-color: #7D6152;
+    /* background-color: #7D6152; */
+    background-color: var(--ctaBtns);
     margin-top: 5rem;
 }
 .ctaSection .tagline{
@@ -1046,6 +1111,18 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 /*  faq */
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 1000px) {
+    #id-hero{
+    /* background-color:#efeae1; */
+    background-color: #e7e7e7;
+    background-image: none;
+    background-position:right 0 bottom 0;
+    background-repeat:no-repeat;
+    background-size:60rem auto;
+}
+    .mobileViewGridContainer .getStartedButtons{
+        background-color: #F5F5F5;
+        padding-bottom: 2rem;
+    }
     .mobileViewGridContainer{
         display: block;
         width: 100%;
@@ -1173,6 +1250,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     }
     .compareProgramsContianer{
         padding-bottom: 4rem;
+        background-color: rgb(245, 245, 245);
     }
     .getStartedButtons{
         height: 4rem;
@@ -1221,11 +1299,23 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
         
     }
 }
+
 @media screen and (max-width: 900px) {
+    .chartSection__Container .upperSection,
+    .chartSection__Container .lowerSection{
+        width: 100%;
+    }
+    .belowLine,
+    .disclosure{
+        width: 100%;
+    }
+    .disclosure .disc{
+        width: 25% !important;
+    }
     .chartSection__Container .upperSection h1{
         width: 100%;
         line-height: 1.5;
-        color: white;
+        color: black;
         font-family: BegumSans;
         font-weight: 600;
         font-size: 3.5rem;
@@ -1260,19 +1350,30 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 }
 
 @media screen and (max-width: 680px) {
+    .chartSection__Container{
+    }
+    .chartSection__Container .upperSection,
+    .chartSection__Container .lowerSection{
+        width: 100%;
+    }
     .chartSection__Container .upperSection h1{
         width: 100%;
         line-height: 1.5;
-        color: white;
+        color: black !important;
         font-family: BegumSans;
         font-weight: 600;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .chartSection__Container .upperSection p{
         font-size: 1.5rem;
     }
     .chartSection__Container .lowerSection .counters{
-        width: 22rem;
+        width: 17rem !important;
+    }
+    .chartSection__Container .lowerSection .counters #leftCount,
+    .chartSection__Container .lowerSection .counters #rightCount{
+        width: 50%;
+       
     }
     .chartSection__Container .lowerSection .counters #leftCount .currency p,
     .chartSection__Container .lowerSection .counters #rightCount .currency p{
@@ -1305,7 +1406,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
         color: white;
         font-family: BegumSans;
         font-weight: 600;
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     .chartSection__Container .upperSection p{
         font-size: 1.5rem;
@@ -1325,7 +1426,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
         width: 100%;
     }
     .chartSection__Container .disclosure .disc{
-        width: 50%;
+        width: 35% !important; 
     }
     
     .footer{
@@ -1380,7 +1481,9 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
         justify-content: center;
         align-items: center;
     }
+    
     .investmentStrategy__SectionContainer{
+        /* margin-top: 2rem; */
         width: 100%;
         flex-direction: column;
         height: 100%;
@@ -1388,6 +1491,12 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
         /* padding-top: 0rem !important;
         padding-bottom: 0rem !important; */
     } 
+    .investmentStrategy__SectionContainer .investment_leftSide{
+        padding: 0;
+    }
+    .investmentStrategy__SectionContainer .investment_leftSide h1{
+        font-size: 2.5rem;
+    }
     .investmentStrategy__SectionContainer .investment_leftSide,
     .investmentStrategy__SectionContainer .investment_rightSide{
         display: flex;
@@ -1403,7 +1512,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-       margin-top: 4rem !important;
+        margin-top: 4rem !important;
     }
     .investmentStrategy__SectionContainer .investment_rightSide .upperSection .upper_leftSection,
     .investmentStrategy__SectionContainer .investment_rightSide .upperSection .upper_rightSection{
