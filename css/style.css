@@ -8,8 +8,20 @@
     box-sizing: border-box;
 }
 .footer_icon{
-    fill: rgb(157, 158, 162) !important;
+    fill: #444 !important;
 }
+@font-face {
+    font-family: SofiaProRegular;
+    src: url('../fonts/thicccboi/fonts/Sofia/Sofia\ Pro\ Regular\ Az.otf');
+  }
+@font-face {
+    font-family: SofiaProBlack;
+    src: url('../fonts/thicccboi/fonts/Sofia/Sofia\ Pro\ Black\ Az.otf Pro\ Regular\ Az.otf');
+  }
+@font-face {
+    font-family: SofiaProMedium;
+    src: url('../fonts/thicccboi/fonts/Sofia/Sofia Pro Medium Az.otf');
+  }
 @font-face {
     font-family: BegumSans;
     src: url('../fonts/thicccboi/fonts/Begum.Sans/BegumSans-Regular.otf');
@@ -37,7 +49,8 @@ html{
 }
 html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Times, serif;color:black;position:relative}.accord-container{width:75%;margin:auto}.accord-img__arrow{font-size:30px;font-weight:bold;position:relative;top:5px;color:#0084ff}.accord-btn{color:black;font-size:1.7rem;font-weight:bold;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-top:1rem;padding-bottom:1rem}.accord-btn:hover,.accord-btn:active{color:black;text-decoration:none}.accord-btn:focus{text-decoration:none}
 .header{
-    background-color:#e7e7e7;
+    /* background-color:#e7e7e7; */
+    background-color:#EAE0D6;
     /* background-color:#a3a6a8; */
 }
 #navbarSupportedContent{
@@ -159,10 +172,11 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
         padding:1.5rem 5rem;
         background-color:#0b966d;
         color:white
-    }.navCopyright{margin-top:20rem;text-align:center}.navItemHide{display:none}@media only screen and (max-width: 991px){.navItemHide{display:block}}.footer{border:1px solid black;width:100%;min-height:95vh;padding:0 5rem;background-color:rgba(0,0,0,0.8);color:#fff;padding:2rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.footer>*{margin:3rem}.footer-content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;letter-spacing:0.3px;line-height:1.3;word-spacing:110%}.footer-content>*{margin-bottom:3rem}.footer-nav__logo{font-size:5rem;color:#fff;font-family:THICCBOI}.footer_nav-link{font-weight:bold}.footer_icon{color:#fff;display:inline-block;width:2.5rem;height:2.5rem;stroke-width:0;stroke:#fff;fill:#fff}.footer_links{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}@media only screen and (max-width: 568px){.footer_links{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}}.footer__link{margin:0 1.5rem}@media only screen and (max-width: 768px){.footer__link:first-child,.footer__link:last-child{margin:0}}.footer-content-body p{margin-bottom:2.5rem}@media only screen and (max-width: 768px){.footer-content-body p:last-child{margin-bottom:0}}@media only screen and (max-width: 768px){.footer_bottomboxrow>*{margin-bottom:1rem; }}.heading{font-weight:bold}.heading-1{font-size:7.5rem}@media only screen and (max-width: 991px){.heading-1{font-size:6rem}}@media only screen and (max-width: 767px){.heading-1{font-size:5rem}}@media only screen and (max-width: 575px){.heading-1{font-size:4rem}}.heading-3{font-size:5rem}@media only screen and (max-width: 991px){.heading-3{font-size:4rem}}@media only screen and (max-width: 767px){.heading-3{font-size:3rem}}@media only screen and (max-width: 575px){.heading-3{font-size:2.5rem}}.heading-4{font-size:3.5rem}.underlined{position:relative;margin-right:1rem}.underlined:after{content:"";position:absolute;bottom:-10px;left:0;height:15px;width:100%;border:5px solid #cfaa8f;border-color:#cfaa8f transparent transparent transparent;border-radius:50%}@media only screen and (max-width: 991px){.underlined:after{height:12px}}@media only screen and (max-width: 575px){.underlined:after{bottom:-15px;left:-5px}}
+    }.navCopyright{margin-top:20rem;text-align:center}.navItemHide{display:none}@media only screen and (max-width: 991px){.navItemHide{display:block}}.footer{border:1px solid black;width:100%;min-height:95vh;padding:0 5rem;background-color:rgba(0,0,0,0.8);color:#fff;padding:2rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.footer>*{margin:3rem}.footer-content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;letter-spacing:0.3px;line-height:1.3;word-spacing:110%}.footer-content>*{margin-bottom:3rem}.footer-nav__logo{font-size:5rem;color:black;font-family:THICCBOI}.footer_nav-link{font-weight:bold}.footer_icon{color:#fff;display:inline-block;width:2.5rem;height:2.5rem;stroke-width:0;stroke:#fff;fill:#fff}.footer_links{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}@media only screen and (max-width: 568px){.footer_links{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}}.footer__link{margin:0 1.5rem}@media only screen and (max-width: 768px){.footer__link:first-child,.footer__link:last-child{margin:0}}.footer-content-body p{margin-bottom:2.5rem}@media only screen and (max-width: 768px){.footer-content-body p:last-child{margin-bottom:0}}@media only screen and (max-width: 768px){.footer_bottomboxrow>*{margin-bottom:1rem; }}.heading{font-weight:bold}.heading-1{font-size:7.5rem}@media only screen and (max-width: 991px){.heading-1{font-size:6rem}}@media only screen and (max-width: 767px){.heading-1{font-size:5rem}}@media only screen and (max-width: 575px){.heading-1{font-size:4rem}}.heading-3{font-size:5rem}@media only screen and (max-width: 991px){.heading-3{font-size:4rem}}@media only screen and (max-width: 767px){.heading-3{font-size:3rem}}@media only screen and (max-width: 575px){.heading-3{font-size:2.5rem}}.heading-4{font-size:3.5rem}.underlined{position:relative;margin-right:1rem}.underlined:after{content:"";position:absolute;bottom:-10px;left:0;height:15px;width:100%;border:5px solid #cfaa8f;border-color:#cfaa8f transparent transparent transparent;border-radius:50%}@media only screen and (max-width: 991px){.underlined:after{height:12px}}@media only screen and (max-width: 575px){.underlined:after{bottom:-15px;left:-5px}}
 #id-hero{
     /* background-color:#efeae1; */
-    background-color: #e7e7e7;
+    /* background-color: #e7e7e7; */
+    background-color: #EAE0D6;
     background-image:url(../images/hand_noshadow.png);
     background-position:right 0 bottom 0;
     background-repeat:no-repeat;
@@ -186,16 +200,17 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 
 /*  */
 .footer{
- background-color: rgb(32, 33, 36);
+ /* background-color: rgb(32, 33, 36); */
+    background-color: #edeee8 ;
  padding-left: 4rem;
  padding-right: 4rem;
-
+    border: none;
 }
 .logoFooter{
     margin-bottom: 1rem !important;
 }
 .col-md-6{
-    color: rgb(157, 158, 162);
+    color: #444;
     font-family: BegumSans;
     font-weight: 500;
     font-size: 13.5px;
@@ -204,7 +219,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     font-family: AktivGroteskCorp;
 }
 .display-4{
-    color: rgb(223, 224, 228);
+    color: black;
     font-weight: 600;
     padding-bottom: 5rem;
 }
@@ -1927,4 +1942,10 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 #id-hero .container .hero{
     /* padding: 0; */
     padding-left: 0;
+}
+.footer__link{
+    color: #444 !important;
+}
+.footer_links a:hover{
+    color: black !important;
 }
