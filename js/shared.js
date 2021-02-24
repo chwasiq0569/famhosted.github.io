@@ -505,3 +505,19 @@ document.getElementById("closeWhiteModal").addEventListener("click", function(){
         document.getElementById("whiteModal").style.display = "none";
     }, 200)
 })
+
+window.onload = function(){
+    document.querySelector(".background-video").style.opacity = "1";
+    document.querySelector(".mainVideo").pause();
+}
+
+document.getElementById("playpauseBtn").addEventListener("click", function(){
+    console.log("playPauseBtn");
+    console.log( document.querySelector(".background-video").style.opacity);
+    document.getElementById("playpause").style.display = "none";
+    document.querySelector(".background-video").style.opacity = "0";
+    setTimeout(function(){
+        document.querySelector(".mainVideo").style.opacity = "1";
+        document.querySelector(".mainVideo").play();
+    }, 1000);
+})
