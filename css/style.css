@@ -967,6 +967,11 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     font-size: 1.75rem;
     font-weight: 500;
 }
+
+.faqContainer .accordion{
+    background-color: #edeee8;
+}
+
 .faqContainer .panel p{
     font-family: AktivGroteskCorp;
     font-size: 1.5rem;
@@ -974,7 +979,6 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 }
 .faq-section {
     padding: 100px 3%;
-    
   }
   
   .question-title {
@@ -1756,6 +1760,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 4rem;
+    background-color: #edeee8 ;
 }
 .faqContainer .seeallFaqsContainer{
     width: 100%;
