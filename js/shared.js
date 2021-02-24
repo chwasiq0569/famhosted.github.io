@@ -506,18 +506,35 @@ document.getElementById("closeWhiteModal").addEventListener("click", function(){
     }, 200)
 })
 
+let videoplayed = false;
+
 window.onload = function(){
     document.querySelector(".background-video").style.opacity = "1";
     document.querySelector(".mainVideo").pause();
+    videoplayed = false;
 }
+
 
 document.getElementById("playpauseBtn").addEventListener("click", function(){
     console.log("playPauseBtn");
-    console.log( document.querySelector(".background-video").style.opacity);
     document.getElementById("playpause").style.display = "none";
     document.querySelector(".background-video").style.opacity = "0";
     setTimeout(function(){
+        document.querySelector(".background-video").style.display = "none";
         document.querySelector(".mainVideo").style.opacity = "1";
         document.querySelector(".mainVideo").play();
+        videoplayed = true;
     }, 1000);
+
+    document.querySelector(".mainVideo").addEventListener("click", function(){
+        if(videoplayed == true){
+            console.log("VIDEO PLAYED == TRUE");
+            document.querySelector(".mainVideo").pause();
+            document.querySelector(".mainVideo").style.opacity = "0";
+            document.querySelector(".background-video").style.display = "block";
+            document.querySelector(".background-video").style.opacity = "1";
+            document.getElementById("playpause").style.display = "flex";
+            videoplayed = false;
+        }
+    })
 })
