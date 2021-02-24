@@ -126,169 +126,169 @@ let rightSideContent = `
 </div>
 `;
 
-let mobileViewGridData = `
-<div class="section">
-<div class="upper">
-    <p>ETF and mutual fund strategies</p>
-</div>
-<div class="lower">
-    <div class="lower_leftSide">
-            <div class="imgContainer">
-                <img src="./images/checkmark.png" alt="checkmark" />
-            </div>
-    </div>
-    <div class="lower_rightSide">
-        <div class="imgContainer">
-            <img src="./images/checkmark.png" alt="checkmark" />
-        </div>
-    </div>
-    <div class="lower_lastSide">
-        <div class="imgContainer">
-            <img src="./images/checkmark.png" alt="checkmark" />
-        </div>
-    </div>
-</div>
-</div> 
-<div class="section">
-<div class="upper">
-    <p>Professionally managed portfolios 1</p>
-</div>
-<div class="lower">
-    <div class="lower_leftSide">
-            <div class="imgContainer">
-                <img src="./images/checkmark.png" alt="checkmark" />
-            </div>
-    </div>
-    <div class="lower_rightSide">
-        <div class="imgContainer">
-            <img src="./images/checkmark.png" alt="checkmark" />
-        </div>
-    </div>
-    <div class="lower_lastSide">
-        <div class="imgContainer">
-            <img src="./images/checkmark.png" alt="checkmark" />
-        </div>
-    </div>
-</div>
-</div> 
-<div class="section">
-<div class="upper">
-    <p>Online dashboard</p>
-</div>
-<div class="lower">
-    <div class="lower_leftSide">
-            <div class="imgContainer">
-                <img src="./images/checkmark.png" alt="checkmark" />
-            </div>
-    </div>
-    <div class="lower_rightSide">
-        <div class="imgContainer">
-            <img src="./images/checkmark.png" alt="checkmark" />
-        </div>
-    </div>
-    <div class="lower_lastSide">
-        <div class="imgContainer">
-            <img src="./images/checkmark.png" alt="checkmark" />
-        </div>
-    </div>
-</div>
-</div> 
-<div class="section">
-<div class="upper">
-    <p>Bank of America banking and Merrill investing connected</p>
-</div>
-<div class="lower">
-    <div class="lower_leftSide">
-            <div class="imgContainer">
-                <img src="./images/checkmark.png" alt="checkmark" />
-            </div>
-    </div>
-    <div class="lower_rightSide">
-        <div class="imgContainer">
-            <img src="./images/checkmark.png" alt="checkmark" />
-        </div>
-    </div>
-    <div class="lower_lastSide">
-        <div class="imgContainer">
-            <img src="./images/checkmark.png" alt="checkmark" />
-        </div>
-    </div>
-</div>
-</div> 
-<div class="section">
-<div class="upper">
-    <p>Establish goals online</p>
-</div>
-<div class="lower">
-    <div class="lower_leftSide">
-            <div class="imgContainer">
-                <img src="./images/checkmark.png" alt="checkmark" />
-            </div>
-    </div>
-    <div class="lower_rightSide">
-        <div class="imgContainer">
-            <img src="./images/checkmark.png" alt="checkmark" />
-        </div>
-    </div>
-    <div class="lower_lastSide">
-        <div class="imgContainer">
-            <img src="./images/checkmark.png" alt="checkmark" />
-        </div>
-    </div>
-</div>
-</div> 
-<div class="section">
-<div class="upper">
-    <p>Advisor helps you establish goals</p>
-</div>
-<div class="lower">
-    <div class="lower_leftSide">
-            <div class="imgContainer">
-                <img src="./images/checkmark.png" alt="checkmark" />
-            </div>
-    </div>
-    <div class="lower_rightSide">
-        <div class="imgContainer">
-            <img src="./images/checkmark.png" alt="checkmark" />
-        </div>
-    </div>
-</div>
-</div> 
-<div class="section">
-<div class="upper">
-    <p>One-on-one advice</p>
-</div>
-<div class="lower">
-    <div class="lower_leftSide">
-            <div class="imgContainer">
-                <img src="./images/checkmark.png" alt="checkmark" />
-            </div>
-    </div>
-    <div class="lower_rightSide">
-        <div class="imgContainer">
-            <img src="./images/checkmark.png" alt="checkmark" />
-        </div>
-    </div>
-</div>
-</div> 
-<div class="section">
-<div class="upper">
-    <p>Periodic reviews with an advisor</p>
-</div>
-<div class="lower">
-    <div class="lower_leftSide">
-            <div class="imgContainer">
-                <img src="./images/checkmark.png" alt="checkmark" />
-            </div>
-    </div>
-    <div class="lower_rightSide">
-        <div class="imgContainer">
-            <img src="./images/checkmark.png" alt="checkmark" />
-        </div>
-    </div>
-</div>
-</div> 
-`;
+// let mobileViewGridData = `
+// <div class="section">
+// <div class="upper">
+//     <p>ETF and mutual fund strategies</p>
+// </div>
+// <div class="lower">
+//     <div class="lower_leftSide">
+//             <div class="imgContainer">
+//                 <img src="./images/checkmark.png" alt="checkmark" />
+//             </div>
+//     </div>
+//     <div class="lower_rightSide">
+//         <div class="imgContainer">
+//             <img src="./images/checkmark.png" alt="checkmark" />
+//         </div>
+//     </div>
+//     <div class="lower_lastSide">
+//         <div class="imgContainer">
+//             <img src="./images/checkmark.png" alt="checkmark" />
+//         </div>
+//     </div>
+// </div>
+// </div> 
+// <div class="section">
+// <div class="upper">
+//     <p>Professionally managed portfolios 1</p>
+// </div>
+// <div class="lower">
+//     <div class="lower_leftSide">
+//             <div class="imgContainer">
+//                 <img src="./images/checkmark.png" alt="checkmark" />
+//             </div>
+//     </div>
+//     <div class="lower_rightSide">
+//         <div class="imgContainer">
+//             <img src="./images/checkmark.png" alt="checkmark" />
+//         </div>
+//     </div>
+//     <div class="lower_lastSide">
+//         <div class="imgContainer">
+//             <img src="./images/checkmark.png" alt="checkmark" />
+//         </div>
+//     </div>
+// </div>
+// </div> 
+// <div class="section">
+// <div class="upper">
+//     <p>Online dashboard</p>
+// </div>
+// <div class="lower">
+//     <div class="lower_leftSide">
+//             <div class="imgContainer">
+//                 <img src="./images/checkmark.png" alt="checkmark" />
+//             </div>
+//     </div>
+//     <div class="lower_rightSide">
+//         <div class="imgContainer">
+//             <img src="./images/checkmark.png" alt="checkmark" />
+//         </div>
+//     </div>
+//     <div class="lower_lastSide">
+//         <div class="imgContainer">
+//             <img src="./images/checkmark.png" alt="checkmark" />
+//         </div>
+//     </div>
+// </div>
+// </div> 
+// <div class="section">
+// <div class="upper">
+//     <p>Bank of America banking and Merrill investing connected</p>
+// </div>
+// <div class="lower">
+//     <div class="lower_leftSide">
+//             <div class="imgContainer">
+//                 <img src="./images/checkmark.png" alt="checkmark" />
+//             </div>
+//     </div>
+//     <div class="lower_rightSide">
+//         <div class="imgContainer">
+//             <img src="./images/checkmark.png" alt="checkmark" />
+//         </div>
+//     </div>
+//     <div class="lower_lastSide">
+//         <div class="imgContainer">
+//             <img src="./images/checkmark.png" alt="checkmark" />
+//         </div>
+//     </div>
+// </div>
+// </div> 
+// <div class="section">
+// <div class="upper">
+//     <p>Establish goals online</p>
+// </div>
+// <div class="lower">
+//     <div class="lower_leftSide">
+//             <div class="imgContainer">
+//                 <img src="./images/checkmark.png" alt="checkmark" />
+//             </div>
+//     </div>
+//     <div class="lower_rightSide">
+//         <div class="imgContainer">
+//             <img src="./images/checkmark.png" alt="checkmark" />
+//         </div>
+//     </div>
+//     <div class="lower_lastSide">
+//         <div class="imgContainer">
+//             <img src="./images/checkmark.png" alt="checkmark" />
+//         </div>
+//     </div>
+// </div>
+// </div> 
+// <div class="section">
+// <div class="upper">
+//     <p>Advisor helps you establish goals</p>
+// </div>
+// <div class="lower">
+//     <div class="lower_leftSide">
+//             <div class="imgContainer">
+//                 <img src="./images/checkmark.png" alt="checkmark" />
+//             </div>
+//     </div>
+//     <div class="lower_rightSide">
+//         <div class="imgContainer">
+//             <img src="./images/checkmark.png" alt="checkmark" />
+//         </div>
+//     </div>
+// </div>
+// </div> 
+// <div class="section">
+// <div class="upper">
+//     <p>One-on-one advice</p>
+// </div>
+// <div class="lower">
+//     <div class="lower_leftSide">
+//             <div class="imgContainer">
+//                 <img src="./images/checkmark.png" alt="checkmark" />
+//             </div>
+//     </div>
+//     <div class="lower_rightSide">
+//         <div class="imgContainer">
+//             <img src="./images/checkmark.png" alt="checkmark" />
+//         </div>
+//     </div>
+// </div>
+// </div> 
+// <div class="section">
+// <div class="upper">
+//     <p>Periodic reviews with an advisor</p>
+// </div>
+// <div class="lower">
+//     <div class="lower_leftSide">
+//             <div class="imgContainer">
+//                 <img src="./images/checkmark.png" alt="checkmark" />
+//             </div>
+//     </div>
+//     <div class="lower_rightSide">
+//         <div class="imgContainer">
+//             <img src="./images/checkmark.png" alt="checkmark" />
+//         </div>
+//     </div>
+// </div>
+// </div> 
+// `;
 
 let collapseItems = document.getElementById("collapseItems");
 let lastItem = document.getElementById("lastItem");
@@ -311,14 +311,14 @@ collapseItems.addEventListener("click", function(){
     document.getElementById('compareProgramsContianer').innerHTML = `<span>Get <a href="#">more information</a> on how Merrill Guided Investing combines the power of technology and human insight and investment expertise.</span>`
 })
 
-const collapseItemsMobile = document.getElementById("collapseItemsMobile");
+// const collapseItemsMobile = document.getElementById("collapseItemsMobile");
 
-collapseItemsMobile.addEventListener("click", function(){
-    console.log("CLICKED")
-    document.getElementById("compareProgramsContianerMobile").style.display = "none";
-    document.getElementById("mainGrid").style.minHeight = 200 + 'rem';
-    $(mobileViewGridData).insertAfter("#insertAfterMobile");
-})
+// collapseItemsMobile.addEventListener("click", function(){
+//     console.log("CLICKED")
+//     document.getElementById("compareProgramsContianerMobile").style.display = "none";
+//     document.getElementById("mainGrid").style.minHeight = 200 + 'rem';
+//     $(mobileViewGridData).insertAfter("#insertAfterMobile");
+// })
 
 var acc = document.getElementsByClassName("accordion");
 var i;

@@ -11,6 +11,9 @@
     font-family: AktivGroteskCorp;
     src: url('../fonts/thicccboi/fonts/AktivGroteskCorp/AktivGroteskCorp-Regular.woff');
   }
+  .header{
+    background-color: white;
+  }
 .mainContent{
     height: 100%;
     width: 100%;
@@ -19,7 +22,8 @@
     align-items: center;
     padding-top: 5rem;
     padding-bottom: 8rem;
-    background-color: #e7e7e7;
+    /* background-color: #e7e7e7; */
+    background-color: white;
 }
 .mainContent .Privacy_contentContainer{
     width: 80%;
