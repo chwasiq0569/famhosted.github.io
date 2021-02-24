@@ -139,6 +139,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
             -webkit-transform:translateX(0px);
             transform:translateX(0px)
         }
+
 .firstLink{
     margin-top: 8rem;
 }
@@ -915,7 +916,8 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     height: 30rem;
     /* background-color: #034b45; */
     /* background-color: #7D6152; */
-    background-color: var(--ctaBtns);
+    /* background-color: var(--ctaBtns); */
+    background-color: #edeee8;
     margin-top: 5rem;
 }
 .ctaSection .tagline{
@@ -931,7 +933,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 .ctaSection .tagline p{
     font-size: 3.5rem;
     /* font-weight: ; */
-    color: white;
+    color: black;
      font-family:"Montserrat";
 }
 .ctaSection .buttonContainer{
@@ -1911,3 +1913,13 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     cursor: pointer;
 }
 
+.getStartedLink{
+    text-decoration: underline !important;
+    color: black !important;
+    font-size: 1.75rem;
+}
+
+#id-hero .container .hero{
+    /* padding: 0; */
+    padding-left: 0;
+}
