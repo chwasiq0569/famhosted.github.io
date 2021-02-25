@@ -10,6 +10,17 @@
 .footer_icon{
     fill: #444 !important;
 }
+.arrowContainer{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: -2rem;
+}
+.arrowContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 @font-face {
     font-family: SofiaProRegular;
     src: url('../fonts/thicccboi/fonts/Sofia/Sofia\ Pro\ Regular\ Az.otf');
@@ -205,9 +216,32 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 }
     @media only screen and (max-width: 1199px){
         #id-hero{
-            background-size:30rem auto;
+            /* border: 5px solid red !important; */
+            /* background-size:30rem auto; */
             padding:5rem 0;
         }
+        }
+
+        @media only screen and (min-width: 1199px){
+            #id-hero{
+                /* border: 5px solid red !important; */
+                /* background-size:30rem auto; */
+                /* padding:5rem 0; */
+                padding: 0;
+                width: 100%;
+                display: flex;
+            }
+            .container{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                display: flex;
+            }
+            .hero-left{
+                text-align: center !important;
+                margin: 0 auto !important;
+                /* padding: 0; */
+            }
         }
         @media only screen and (max-width: 575px){
             #id-hero{
@@ -267,9 +301,12 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
                     margin-top: 15rem;
                     /* margin-top: 16rem; */
                 }
+                .getStartedoption{
+                    justify-content: flex-start !important;
+                }
                 .getStartedLink{
-                    width: 100%;
-                    display: flex;
+                    /* width: 100%; */
+                    /* display: flex; */
                     text-align: left;
                     margin-left: 1rem;
                 }
@@ -510,7 +547,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     width: 100%;
     text-align: center;
     padding-top: 7rem;
-
+    background-color: #edeee8;
 }
 .gridInfoContainer .head{
     width: 540px;
@@ -573,6 +610,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     width: 100%;
     padding-top: 7rem;
     padding-bottom: 7rem;
+    background-color: #edeee8;
 }
 
 .gridInfoContainer2 .head{
@@ -2025,7 +2063,11 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 .box{
     cursor: pointer;
 }
-
+.getStartedoption{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .getStartedLink{
     text-decoration: underline !important;
     color: black !important;
@@ -2135,16 +2177,49 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     width: 80%;
     color: white;
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 10rem;
-    font-weight: 600;
-    font-family: SofiaProMedium;
+    font-size: 2rem;
+    margin-bottom: 6rem;
+    margin-top: 3.5rem;
+    font-weight: 400;
+    /* font-family: SofiaProMedium; */
+    font-family: SofiaProRegular;
+    text-transform: lowercase;
 }
 .ThirdBlackSection .mainContent{
-    width: 37%;
+    width: 55%;
     color: white;
     text-align: center;
-    font-size: 2rem;
-    line-height: 1.5;
-    font-family: SofiaProRegular;
+    font-size: 3.25rem;
+    line-height: 2;
+    font-family: SofiaProMedium;
+    text-transform: lowercase;
+}
+@media screen and (max-width: 900px) {
+    .ThirdBlackSection .mainContent{
+        width: 55%;
+        color: white;
+        font-size: 3rem;
+        line-height: 1.75;
+        font-family: SofiaProMedium;
+        text-transform: lowercase;
+    }
+}
+@media screen and (max-width: 664px) {
+    .ThirdBlackSection .headerSection{
+        font-size: 1.75rem;
+    }
+    .ThirdBlackSection .mainContent{
+        width: 60%;
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .ThirdBlackSection .headerSection{
+        font-size: 1.5rem;
+        margin-top: 5rem;
+    }
+    .ThirdBlackSection .mainContent{
+        width: 80%;
+        font-size: 2rem;
+    }
 }
