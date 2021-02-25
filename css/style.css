@@ -1658,6 +1658,11 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 }
 
 @media screen and (max-width: 600px) {
+    .faqContainer .questionContainer h1{
+        font-family: SofiaProBlack;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
     .section3Container .upper{
         width: 100%;
         /* margin: 0; */
