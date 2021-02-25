@@ -553,11 +553,12 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     width: 540px;
     margin: 0 auto;
     padding-bottom: 2rem;
-    font-family:"Montserrat";
-    font-size: 3.2rem;
+    
 }
 .gridInfoContainer .head h1{
-    font-weight: 600;
+    /* font-weight: 600; */
+    font-family: SofiaProBlack;
+    font-size: 3.2rem;
 }
 .gridInfoContainer .grid{
     width: 100%;
@@ -593,8 +594,8 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 .gridInfoContainer .grid .col3 .main{
     margin-top: 2.5rem;
     margin-bottom: 2rem;
-    font-family:"Montserrat";
-    font-weight: 600;
+    font-family: SofiaProMedium;
+    /* font-weight: 600; */
     font-size: 1.75rem;
 }
 .gridInfoContainer .grid .col1 .details,
@@ -602,7 +603,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 .gridInfoContainer .grid .col3 .details{
     width: 75%;
     height: 75%;
-    font-family: AktivGroteskCorp;
+    font-family: SofiaProRegular;
     font-size: 1.5rem;
 }
 
@@ -618,11 +619,12 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     margin: 0 auto;
     padding-bottom: 6rem;
     text-align: center;
-    font-family:"Montserrat";
-    font-size: 1.5rem;
+    
 }
 .gridInfoContainer2 .head h1{
     font-weight: 600;
+    font-family: SofiaProBlack;
+    font-size: 3.2rem;
 }
 .gridInfoContainer2 .grid2{
     display: flex;
@@ -644,6 +646,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 .gridInfoContainer2 .grid2 .col1 h1,
 .gridInfoContainer2 .grid2 .col2 h1,
 .gridInfoContainer2 .grid2 .col3 h1{
+    font-family: SofiaProBlack;
     font-size: 5rem;
     font-weight: 300;
     color: #D41230;
@@ -652,15 +655,15 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 .gridInfoContainer2 .grid2 .col2 .main,
 .gridInfoContainer2 .grid2 .col3 .main{
     font-size: 1.75rem;
-    font-weight: 600;
-    font-family:"Montserrat";
+    /* font-weight: 600; */
+    font-family: SofiaProMedium;
     letter-spacing: 1px;
 }
 .gridInfoContainer2 .grid2 .col1 .details,
 .gridInfoContainer2 .grid2 .col2 .details,
 .gridInfoContainer2 .grid2 .col3 .details{
     width: 70%;
-    font-family: AktivGroteskCorp;
+    font-family: SofiaProRegular;
     font-size: 1.5rem;
 }
 .gridInfoContainer2 .buttonContainer {
@@ -669,6 +672,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 .gridInfoContainer2 .buttonContainer .gridGetStartedBtn{
     width: 20rem;
@@ -678,7 +682,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     font-weight: 500;
     border: none;
     font-size: 1.75rem;
-    font-family: BegumSans;
+    font-family: SofiaProRegular;
 }
 
 .section3Container{
@@ -700,20 +704,20 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 .section3Container .upper .tophead{
     width: 58%;
     font-weight: 500;
-    font-family: AktivGroteskCorp;
+    font-family: SofiaProMedium;
     text-align: center;
 }
 .section3Container .upper .head{
     margin-top: 2rem;
     width: 58%;
     margin-bottom: 2rem;
-    font-family:"Montserrat";
-    font-weight: 600;
+    font-family: SofiaProBlack;
+    /* font-weight: 600; */
     text-align: center;
     /* color: red; */
 }
 .section3Container .upper .info{
-    font-family: AktivGroteskCorp;
+    font-family: SofiaProRegular;
     font-size: 1.5rem;
     width: 58%;
     text-align: center;
@@ -721,6 +725,11 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 .section3Container .lower{
     width: 100%;
 }
+
+.lowerInner_Container .col .row .getStartedBtn{
+    font-family: SofiaProRegular !important;
+}
+
 .section3Container .lower .lowerInner_Container{
     width: 100%;
     display: flex;
@@ -813,28 +822,36 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     font-family:"Montserrat";
 }
 .section3Container .lower .lowerInner_Container .leftSide{
-   font-weight:600;
-   font-family:"Montserrat";
+  
+}
+.section3Container .lower .lowerInner_Container .leftSide p{
+    font-family:"Montserrat";
+    font-size: 1.5rem;
+    font-family: SofiaProMedium;
 }
 .section3Container .lower .lowerInner_Container .col .row .head{
     width: 100%;
     text-align: center;
-    font-weight: 500;
-    font-size: 1.25rem;
+    /* font-weight: 500; */
+    font-size: 1.5rem;
+    font-family: SofiaProMedium;
 }
 .section3Container .lower .lowerInner_Container .col .row .main{
     font-size: 13px;
     text-align: left;
+    font-family: SofiaProMedium;
 }
 .section3Container .lower .lowerInner_Container .col .row .info{
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1;
     text-align: left;
+    font-family: SofiaProRegular;
 }
 
 .section3Container .lower .lowerInner_Container .col .row .details{
     font-size: 12px;
     text-align: center;
+    font-family: SofiaProRegular;
 }
 
 .compareProgramsContianer{
@@ -864,6 +881,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     cursor: pointer;
     /* padding-left: 1rem;
     padding-right: 1rem; */
+    font-family: SofiaProRegular;
 }
 
 
@@ -916,18 +934,19 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 }
 .investmentStrategy__SectionContainer .investment_leftSide h1{
     font-size: 40px;
-    font-family:"Montserrat";
+    font-family: SofiaProBlack;
     font-weight: 600;
 }
 .investmentStrategy__SectionContainer .investment_leftSide p:nth-child(2){
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     /* text-align: center; */
-    font-family: AktivGroteskCorp;
+    font-family: SofiaProRegular;
+
 }
 .investmentStrategy__SectionContainer .investment_leftSide a{
-    font-family: AktivGroteskCorp;
+    font-family: SofiaProBlack;
     color: #259591 ;
     text-decoration: underline;
 }
@@ -1040,11 +1059,13 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 .investmentStrategy__SectionContainer .investment_rightSide .upperSection .upper_leftSection .row .box span,
 .investmentStrategy__SectionContainer .investment_rightSide .upperSection .upper_rightSection .row .box span,
 .investmentStrategy__SectionContainer .investment_rightSide .lowerSection .row .box span{
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: white;
-    font-weight: 600;
+    /* font-weight: 600; */
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    font-family: SofiaProRegular;
+
 }
 .investmentStrategy__SectionContainer .investment_rightSide .upperSection .upper_leftSection .row:nth-child(2),
 .investmentStrategy__SectionContainer .investment_rightSide .upperSection .upper_rightSection .row:nth-child(2){
@@ -1549,6 +1570,9 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 
 
 @media screen and (max-width: 785px) {
+    .getMoreInfoGrid{
+        display: none;
+    }
     .section3Container{
         width: 100% !important;
     }
@@ -1995,7 +2019,8 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     background-color: rgb(37, 149, 145);
     width: 40rem;
     height: auto;
-    font-family: BegumSans;
+   
+
     padding: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -2038,11 +2063,13 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     color: hsla(20,0%,100%,.9);
     font-weight: 400;
     padding-bottom: 1rem;
+    font-family: SofiaProMedium;
 }
 .popUpCover .contentContainer .upperSection p{
     color: #242222;
     font-size: 1.75rem;
     line-height: 1.5;
+    font-family: SofiaProRegular;
 }
 .popUpCover .contentContainer .lowerSection{
     font-family: Arial, Helvetica, sans-serif;
@@ -2244,7 +2271,7 @@ background-color: #7a6c6c;
 }
 @media (max-height: 736px) and (max-width: 376px) { 
     .hero-subtitle{
-        margin-top: 8rem;
+        margin-top: 3rem;
     }
 }
 @media screen and (max-width: 320px) {
