@@ -19,27 +19,27 @@ $(document).ready(function(){
 
 let leftSideContent = `
 <div class="row">
-<p>ETF and mutual fund strategies
+<p>Personalized financial advice
 </p>
 </div>
 <div class="row">
-    <p>Professionally managed portfoliosFootnote 1</p>
+    <p>Globally diversified investment portfolios</p>
 </div>
 <div class="row">
-    <p>Online dashboard</p>
+    <p>Automatic Rebalancing</p>
 </div>
 <div class="row">
-<p>Bank of America banking and Merrill investing connected</p>
+<p>Advanced tax-savings strategies</p>
 </div>
 <div class="row">
-<p>Establish goals online
+<p>Access to Licensed Financial Experts
 </p>
 </div>
 <div class="row">
-<p>Advisor helps you establish goals</p>
+<p>Reliable customer service</p>
 </div>
 <div class="row">
-<p>One-on-one advice</p>
+<p>One-one-one advice</p>
 </div>
 <div class="row">
 <p>Periodic reviews with an advisor</p>
@@ -489,22 +489,22 @@ let box = document.querySelectorAll(".box");
 console.log(contentArr);
 
 
-document.getElementById("openDisclosures").addEventListener("click", function(){
-    document.getElementById("whiteModal").style.display = "flex";
-    setTimeout(function(){
-        document.getElementById("whiteModal").style.opacity = "1";
-        document.getElementById("whiteModal").style.transition = "all 0.5s ease";
-    }, 200)
+// document.getElementById("openDisclosures").addEventListener("click", function(){
+//     document.getElementById("whiteModal").style.display = "flex";
+//     setTimeout(function(){
+//         document.getElementById("whiteModal").style.opacity = "1";
+//         document.getElementById("whiteModal").style.transition = "all 0.5s ease";
+//     }, 200)
     
-})
+// })
 
-document.getElementById("closeWhiteModal").addEventListener("click", function(){
-    document.getElementById("whiteModal").style.opacity = "0";
-    document.getElementById("whiteModal").style.transition = "all 0.5s ease";
-    setTimeout(function(){
-        document.getElementById("whiteModal").style.display = "none";
-    }, 200)
-})
+// document.getElementById("closeWhiteModal").addEventListener("click", function(){
+//     document.getElementById("whiteModal").style.opacity = "0";
+//     document.getElementById("whiteModal").style.transition = "all 0.5s ease";
+//     setTimeout(function(){
+//         document.getElementById("whiteModal").style.display = "none";
+//     }, 200)
+// })
 
 let videoplayed = false;
 

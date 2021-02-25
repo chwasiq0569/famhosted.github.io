@@ -136,6 +136,9 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 }
 .main-nav__icon::before{width:3rem;height:2px;background-color:black;margin-top:-0.8rem;content:"";display:block}.main-nav__icon::after{width:1.5rem;height:2px;background-color:black;margin-top:1.4rem;content:"";display:block;margin-left:1.5rem}.main-nav__btn{border-radius:100%;padding:2.2rem 1.6rem;margin-right:0.5rem;margin-top:1rem}.main-nav__btn:focus{outline:none}
 @media only screen and (max-width: 991px){
+    .topNav{
+        margin-top: 7rem;
+    }
     .main-nav #navitem1{display:none}
     .main-nav__items{
         background-color:white;
@@ -569,6 +572,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
 .gridInfoContainer .grid .col1,
 .gridInfoContainer .grid .col2,
 .gridInfoContainer .grid .col3{
+    width: 33%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -904,6 +908,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     justify-content: space-between;
     padding-top: 8rem;
     /* padding-bottom: 16rem !important; */
+    background-color: #edeee8;
 }
 .investmentStrategy__SectionContainer .investment_leftSide,
 .investmentStrategy__SectionContainer .investment_rightSide{
@@ -1079,7 +1084,8 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     /* background-color: #7D6152; */
     /* background-color: var(--ctaBtns); */
     background-color: #edeee8;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
+    padding-top: 5rem;
 }
 .ctaSection .tagline{
     width: 100%;
@@ -1728,6 +1734,7 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
         width: 100%;
         flex-direction: column;
     }
+ 
     .gridInfoContainer .grid .col1,
     .gridInfoContainer .grid .col2,
     .gridInfoContainer .grid .col3,
@@ -1736,6 +1743,9 @@ html,body{overflow-x:hidden}body{font-size:1.4rem;font-family:"Montserrat", Time
     .gridInfoContainer2 .grid2 .col3{
         width: 100%;
     }
+
+    
+
     .gridInfoContainer .grid .col2{
         margin-top: 2rem;
         margin-bottom: 2rem;
