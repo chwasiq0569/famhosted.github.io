@@ -308,7 +308,7 @@ collapseItems.addEventListener("click", function(){
     investingGuide_lastSide.style.height = 135 + 'rem';
     $(rightSideContent).insertAfter("#insertAfter4");
 
-    document.getElementById('compareProgramsContianer').innerHTML = `<span>Get <a href="#">more information</a> on how Merrill Guided Investing combines the power of technology and human insight and investment expertise.</span>`
+    document.getElementById('compareProgramsContianer').innerHTML = `<span class="getMoreInfoGrid">Get <a href="#">more information</a> on how Merrill Guided Investing combines the power of technology and human insight and investment expertise.</span>`
 })
 
 // const collapseItemsMobile = document.getElementById("collapseItemsMobile");
