@@ -509,6 +509,7 @@ document.getElementById("closeWhiteModal").addEventListener("click", function(){
 let videoplayed = false;
 
 window.onload = function(){
+    // document.querySelector(".background-video").style.display = "block";
     document.querySelector(".background-video").style.opacity = "1";
     document.querySelector(".mainVideo").pause();
     videoplayed = false;
