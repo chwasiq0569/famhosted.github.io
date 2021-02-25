@@ -509,7 +509,7 @@ console.log(contentArr);
 let videoplayed = false;
 
 window.onload = function(){
-    // document.querySelector(".background-video").style.display = "block";
+    document.querySelector(".background-video").style.display = "block";
     document.querySelector(".background-video").style.opacity = "1";
     document.querySelector(".mainVideo").pause();
     videoplayed = false;
@@ -521,8 +521,8 @@ document.getElementById("playpauseBtn").addEventListener("click", function(){
     document.getElementById("playpause").style.display = "none";
     document.querySelector(".background-video").style.opacity = "0";
     setTimeout(function(){
-        document.querySelector(".background-video").style.display = "none";
         document.querySelector(".mainVideo").style.opacity = "1";
+        document.querySelector(".background-video").style.display = "none";
         document.querySelector(".mainVideo").play();
         videoplayed = true;
     }, 1000);
