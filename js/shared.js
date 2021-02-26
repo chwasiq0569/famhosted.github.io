@@ -126,169 +126,7 @@ let rightSideContent = `
 </div>
 `;
 
-// let mobileViewGridData = `
-// <div class="section">
-// <div class="upper">
-//     <p>ETF and mutual fund strategies</p>
-// </div>
-// <div class="lower">
-//     <div class="lower_leftSide">
-//             <div class="imgContainer">
-//                 <img src="./images/checkmark.png" alt="checkmark" />
-//             </div>
-//     </div>
-//     <div class="lower_rightSide">
-//         <div class="imgContainer">
-//             <img src="./images/checkmark.png" alt="checkmark" />
-//         </div>
-//     </div>
-//     <div class="lower_lastSide">
-//         <div class="imgContainer">
-//             <img src="./images/checkmark.png" alt="checkmark" />
-//         </div>
-//     </div>
-// </div>
-// </div> 
-// <div class="section">
-// <div class="upper">
-//     <p>Professionally managed portfolios 1</p>
-// </div>
-// <div class="lower">
-//     <div class="lower_leftSide">
-//             <div class="imgContainer">
-//                 <img src="./images/checkmark.png" alt="checkmark" />
-//             </div>
-//     </div>
-//     <div class="lower_rightSide">
-//         <div class="imgContainer">
-//             <img src="./images/checkmark.png" alt="checkmark" />
-//         </div>
-//     </div>
-//     <div class="lower_lastSide">
-//         <div class="imgContainer">
-//             <img src="./images/checkmark.png" alt="checkmark" />
-//         </div>
-//     </div>
-// </div>
-// </div> 
-// <div class="section">
-// <div class="upper">
-//     <p>Online dashboard</p>
-// </div>
-// <div class="lower">
-//     <div class="lower_leftSide">
-//             <div class="imgContainer">
-//                 <img src="./images/checkmark.png" alt="checkmark" />
-//             </div>
-//     </div>
-//     <div class="lower_rightSide">
-//         <div class="imgContainer">
-//             <img src="./images/checkmark.png" alt="checkmark" />
-//         </div>
-//     </div>
-//     <div class="lower_lastSide">
-//         <div class="imgContainer">
-//             <img src="./images/checkmark.png" alt="checkmark" />
-//         </div>
-//     </div>
-// </div>
-// </div> 
-// <div class="section">
-// <div class="upper">
-//     <p>Bank of America banking and Merrill investing connected</p>
-// </div>
-// <div class="lower">
-//     <div class="lower_leftSide">
-//             <div class="imgContainer">
-//                 <img src="./images/checkmark.png" alt="checkmark" />
-//             </div>
-//     </div>
-//     <div class="lower_rightSide">
-//         <div class="imgContainer">
-//             <img src="./images/checkmark.png" alt="checkmark" />
-//         </div>
-//     </div>
-//     <div class="lower_lastSide">
-//         <div class="imgContainer">
-//             <img src="./images/checkmark.png" alt="checkmark" />
-//         </div>
-//     </div>
-// </div>
-// </div> 
-// <div class="section">
-// <div class="upper">
-//     <p>Establish goals online</p>
-// </div>
-// <div class="lower">
-//     <div class="lower_leftSide">
-//             <div class="imgContainer">
-//                 <img src="./images/checkmark.png" alt="checkmark" />
-//             </div>
-//     </div>
-//     <div class="lower_rightSide">
-//         <div class="imgContainer">
-//             <img src="./images/checkmark.png" alt="checkmark" />
-//         </div>
-//     </div>
-//     <div class="lower_lastSide">
-//         <div class="imgContainer">
-//             <img src="./images/checkmark.png" alt="checkmark" />
-//         </div>
-//     </div>
-// </div>
-// </div> 
-// <div class="section">
-// <div class="upper">
-//     <p>Advisor helps you establish goals</p>
-// </div>
-// <div class="lower">
-//     <div class="lower_leftSide">
-//             <div class="imgContainer">
-//                 <img src="./images/checkmark.png" alt="checkmark" />
-//             </div>
-//     </div>
-//     <div class="lower_rightSide">
-//         <div class="imgContainer">
-//             <img src="./images/checkmark.png" alt="checkmark" />
-//         </div>
-//     </div>
-// </div>
-// </div> 
-// <div class="section">
-// <div class="upper">
-//     <p>One-on-one advice</p>
-// </div>
-// <div class="lower">
-//     <div class="lower_leftSide">
-//             <div class="imgContainer">
-//                 <img src="./images/checkmark.png" alt="checkmark" />
-//             </div>
-//     </div>
-//     <div class="lower_rightSide">
-//         <div class="imgContainer">
-//             <img src="./images/checkmark.png" alt="checkmark" />
-//         </div>
-//     </div>
-// </div>
-// </div> 
-// <div class="section">
-// <div class="upper">
-//     <p>Periodic reviews with an advisor</p>
-// </div>
-// <div class="lower">
-//     <div class="lower_leftSide">
-//             <div class="imgContainer">
-//                 <img src="./images/checkmark.png" alt="checkmark" />
-//             </div>
-//     </div>
-//     <div class="lower_rightSide">
-//         <div class="imgContainer">
-//             <img src="./images/checkmark.png" alt="checkmark" />
-//         </div>
-//     </div>
-// </div>
-// </div> 
-// `;
+
 
 let collapseItems = document.getElementById("collapseItems");
 let lastItem = document.getElementById("lastItem");
@@ -450,21 +288,17 @@ let box = document.querySelectorAll(".box");
    Array.from(box).forEach(function(b, i){
    console.log(b, i);
    b.addEventListener("click", function(e){
-
-    
-
-
    console.log(e.currentTarget, i);
    if(i >= 8 && i < 10){
-    document.querySelector(".contentContainer").style.backgroundColor = "#a58832";
+    document.querySelector(".contentContainer").style.backgroundColor = "#6d4e41";
+    document.querySelector(".infoContent").style.color = "white";
    } 
    else if( i >= 10 && i < 21){
-    document.querySelector(".contentContainer").style.backgroundColor = "#ef7622";
-    
+    document.querySelector(".contentContainer").style.backgroundColor = "#01535c";
+    document.querySelector(".infoContent").style.color = "white";
    }
    else{
-    document.querySelector(".contentContainer").style.backgroundColor = "#1f55a5";
-     
+    document.querySelector(".contentContainer").style.backgroundColor = "#3b805d";
    }
 
    document.querySelector(".popUpCover").style.display = "flex";
@@ -537,5 +371,12 @@ document.getElementById("playpauseBtn").addEventListener("click", function(){
             document.getElementById("playpause").style.display = "flex";
             videoplayed = false;
         }
+    })
+})
+
+document.getElementById("signInButton").addEventListener("click", function(){
+    document.getElementById("signInSlider").style.transform = "translateX(0%)";
+    document.getElementById("closeSignInButton").addEventListener("click",function(){
+        document.getElementById("signInSlider").style.transform = "translateX(100%)";
     })
 })

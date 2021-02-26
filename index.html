@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Fam. A Financial company</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
@@ -34,19 +34,42 @@
                                 <span class="main-nav__close-img"></span>
                             </button>
                         </li>
-                        <!-- <li class="firstLink nav-item"><a class="nav-link main-nav__link" href="#id-learn">How it works</a></li> -->
-                        <!-- <li class="nav-item"><a class="nav-link main-nav__link" href="#id-learn">Pricing</a></li> -->
-                        <!-- <li class="nav-item"><a class="nav-link main-nav__link" href="#id-learn">FAQ</a></li> -->
-                        <li class="nav-item topNav"><a class="nav-link main-nav__link" href="#id-signin">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link main-nav__link" href="#id-signin">Sign in</a></li>
+                        <li class="nav-item topNav"><a class="nav-link main-nav__link" href="">Pricing</a></li>
+                        <li id="signInButton" class="nav-item"><a class="nav-link main-nav__link" id="preventAnchor" href="">Sign in</a></li>
                         <li class="nav-item"><a class="nav-link main-nav__link" href="#id-signin">Get Started</a></li>
-                        <!-- <li class="nav-item" id= "navitem1"><a class="nav-link main-nav__link" href="#id-getstart"><span class="navactive">Join Fam</span></a></li> -->
                     </ul>
                     <p class="navCopyright navItemHide">&copy; 2021 Form Advisory Group</p>
                 </div>
             </nav>
         </div>
     </header>
+
+    <div id="signInSlider" class="signInSlider">
+        <div class="headerSection">
+            <h1>Sign In</h1>
+            <div id="closeSignInButton" class="closeIcon">
+                <img src="./images/close-button.svg" alt="close-Icon" />
+            </div>
+        </div>
+        <div class="signInSection">
+            <div class="iconContainer">
+                <img src="./images/altriust-removebg-preview.png" alt="Altriust" />
+            </div>
+            <div class="signInButton">
+                <a href="http://www.altruist.com/login" target="_blank"> SIGN IN </a>
+            </div>
+
+            
+        </div>
+        <div class="signInSection">
+            <div class="iconContainer">
+                <img src="./images/TD_Ameritrade.svg" alt="TD_Ameritrade" />
+            </div>
+            <div class="signInButton">
+                <a href="http://www.advisorclient.com/" target="_blank"> SIGN IN </a>
+            </div>
+        </div>
+    </div>
 
     <main>
 
@@ -73,10 +96,7 @@
                 <div class="hero" >
                     <div class="hero-left">
                         <!-- <h1 class="heading heading-1 hero-title"  ><span class="underlined">Your</span> personal money manager</h1> -->
-                        <p class="hero-subtitle">A digital investment manager built to do one thing - get more money in the hands of black people.
-
-
-                        </p>
+                        <p class="hero-subtitle">A digital investment manager built to do one thing - get more money in the hands of black people.</p>
                         <!-- <a href="#" class="hero-btn__start" id="btn_getstart">Join Fam</a> -->
                         <div class="getStartedoption">
                             <a href="#" class="getStartedLink" id="">Join Fam
@@ -89,18 +109,6 @@
         </section>
 
         <!--Section ED-->
-        <!-- <section class="section-ed">
-            <div class="container">
-                <div class="ed">
-                    <p class="ed-title">Here's the crucial bit</p>
-                    <div class="ed-desc">                   
-                        <p>Thanks to science, baldness can now be optional. ED? Optional. If it ain't broke don't fix it, sure. But let's work on not breaking it in the first place. Prevention. More effective than denial.</p>
-                    </div>
-                
-                </div>
-            </div>
-        </section> -->
-
         <!-- chartSection starts -->
 
         <div class="videoSection">
@@ -133,52 +141,7 @@
                 of smart technology.</p>
             </div>
         </div>
-        <!-- <div class="chartSection__Container">
-                <div data-aos="fade-up" class="upperSection">
-                    <h1>
-                        When your financial advisor does their best work, your money could grow up to 3% more each year. <sup>1</sup>
-                    </h1>
-                    <p>What does 3% look like over time?
-                    </p>
-                </div>
-                <div data-aos="fade-up" id="mainChart" class="lowerSection">
-                    <div class="counters"> 
-                        <div id="leftCount">
-                            <div class="currency">
-                                <p>$</p><p class="count">397076</p>
-                            </div>
-                           <p class="countInfo">No advisor</p>
-                        </div>
-                        <div id="rightCount">
-                            <div class="currency">
-                                <p>$</p><p class="count">397076</p>
-                            </div>
-                            
-                            <p class="countInfo">With advisor</p>
-                        </div>
-                    </div>
-                    <div class="chart-container">
-                        <canvas id="myChart" ></canvas>
-                    </div>
-                </div>
-                <div data-aos="fade-up" class="belowLine">
-                    <div>Year 1</div>
-                    <div>Growth of $100,000</div>
-                    <div>Year 30</div>
-                </div>
-                <div id="openDisclosures" class="disclosure">
-                    <div class="disc">
-                        <span>1</span>
-                        <span>Click here for disclosure</span>
-                    </div>
-                </div>
-            </div> -->
-
-        <!-- chartSection ends-->
-
-        <!-- <div class="imagePlaceHolderSection">
-            <img src="./images/pexels-anete-lusina-4791303.jpg" alt="imgContainer" />
-        </div> -->
+       
 
         <!-- grid Section Started -->
         <div class="gridInfoContainer">
@@ -221,7 +184,12 @@
             </div>
         </div>
         <!-- grid Section Ended -->
+        <div class="imagePlaceHolderSection">
+            <img src="./images/opoi.jpeg" alt="imgContainer" />
+            <div class="wrapperColor">
 
+            </div> 
+        </div>
         <!-- grid Section2 Started -->
         <div class="gridInfoContainer2">
             <div class="head">
@@ -256,12 +224,7 @@
             </div>
         </div>
         <!-- grid Section2 Ended -->
-        <div class="imagePlaceHolderSection">
-            <img src="./images/pexels-christina-morillo-1181233.jpg" alt="imgContainer" />
-            <div class="wrapperColor">
-
-            </div>
-        </div>
+        
         <!-- section3 starts -->
         <div class="section3Container">
             <div class="upper">
@@ -286,6 +249,7 @@
                     <div class="row">
 
                     </div>
+                    
                 </div>
                 <div id="investingGuide_middle" class="middle col">
                     <div class="row">
@@ -296,7 +260,7 @@
                             Everything you need to invest like an expert
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row price">
                         <p>$500 - $10,000</p>
                     </div>
                     <div id="insertAfter2" class="row">
@@ -312,6 +276,7 @@
                         </button>
                     </div>
                 </div>
+                
                 <div id="investingGuide_rightSide" class="rightSide col">
                     <div class="row">
                         <div class="head">
@@ -321,15 +286,16 @@
                             You’d like one-on one help to pursue your money goals
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row price">
                         <p>$10,000 - $500,000</p>
                     </div>
                     <div id="insertAfter3" class="row">
                         <p class="main">Less than $15 per month for a $20k balance
                         </p>
-                        <p class="info">0.85% annual fee<sup></sup></p>
+                        <p class="info feeInfo">0.85% annual fee<sup></sup></p>
                         <p class="info">Other fees may apply*</p>
                     </div>
+                    
                     <div class="row">
                         <button class="getStartedBtn">
                             Get Started
@@ -345,13 +311,13 @@
                             You want a more dedicated team of advisors designed to help you build your legacy
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row price">
                         <p>$500,000</p>
                     </div>
                     <div id="insertAfter4" class="row">
                         <p class="main">Less than $250 per month for a $500k balance
                         </p>
-                        <p class="info">0.50% annual fee<sup></sup></p>
+                        <p class="info feeInfo">0.50% annual fee<sup></sup></p>
                         <p class="info">Other fees may apply*</p>
                     </div>
                     <div class="row">
@@ -360,7 +326,19 @@
                         </button>
                     </div>
                 </div>
-            </div>
+            </div> 
+            <!-- <div id="compareProgramsContianer" class="compareProgramsContianer">
+                <div class="leftLine">
+                </div>
+                <div id="collapseItems" class="midLink">
+                    + Compare program features
+                </div>
+                <div class="rightLine">
+
+                </div>
+            </div>  -->
+        </div> 
+        <div class="showMoreGridForMobile">
             <div id="compareProgramsContianer" class="compareProgramsContianer">
                 <div class="leftLine">
                 </div>
@@ -370,95 +348,13 @@
                 <div class="rightLine">
 
                 </div>
-            </div> 
-        </div> 
+            </div>
+        </div>
         </div>
         <!-- section3 ends -->
 
         <!-- section3 mobile starts -->
-        <!-- <div class="mobileViewGridContainer">
-            <div class="mainSection">
-                <p class="tophead">AN INVESTMENT ADVISORY PROGRAM
-                </p>
-                <h1 class="head">Merrill Guided Investing
-                </h1>
-                <p class="info">Set your investing goals online or talk with an advisor and set goals together. Either way, you'll have 24/7 access to Merrill's award-winning <sup> 3 </sup>service and online tools.</p>
-            </div>
-            <div id="myHeader" class="gridHeader">
-                <div class="leftSide">
-                    <p>Online with an advisor</p>
-                </div>
-                <div class="rightSide">
-                    <p>Online</p>
-                </div>
-                <div class="lastSide">
-                    <p>Do it Yourself</p>
-                </div>
-            </div>
-            <div id="mainGrid" class="mainGrid">
-                <div class="section">
-                    <div class="upper">
-                        <p>Minimum Investment</p>
-                    </div>
-                    <div class="lower">
-                        <div class="lower_leftSide">
-                            $20,000
-                        </div>
-                        <div class="lower_rightSide">
-                            $5,000
-                        </div>
-                        <div class="lower_lastSide">
-                            $1,000
-                        </div>
-                    </div>
-                </div>
-                 <div id="insertAfterMobile" class="section">
-                    <div class="upper">
-                        <p>Straightforward pricing</p>
-                    </div>
-                    <div class="lower">
-                        <div class="lower_leftSide">
-                            <p class="main">Less than $15 per month for a $20k balance</p>
-                            <p class="info">Annual Program Fee 0.85%<sup>4</sup></p>
-                            <p class="info">Other fees may apply*</p>
-                        </div>
-                        <div class="lower_rightSide">
-                            <p class="main">Less than $2 per month for a $5k balance</p>
-                            <p class="info">Annual Program Fee 0.45%<sup>5</sup></p>
-                            <p class="info">Other fees may apply*</p>
-                        </div>
-                        <div class="lower_lastSide">
-                            <p class="main">Less than $2 per month for a $5k balance</p>
-                            <p class="info">Annual Program Fee 0.45%<sup>5</sup></p>
-                            <p class="info">Other fees may apply*</p>
-                        </div>
-                    </div>
-                </div> 
-
-                <div class="getStartedButtons">
-                    <div class="leftSide">
-                        <button>Join Fam</button>
-                    </div>
-                    <div class="rightSide">
-                        <button>Join Fam</button>
-                    </div>
-                    <div class="lastSide">
-                        <button>Join Fam</button>
-                    </div>
-                </div>
-                <div id="compareProgramsContianerMobile" class="compareProgramsContianer">
-                    <div class="leftLine">
-                    </div>
-                    <div id="collapseItemsMobile" class="midLink">
-                        + Compare program features
-                    </div>
-                    <div class="rightLine">
     
-                    </div>
-                </div>  
-                
-            </div>
-        </div> -->
 
         <!-- section3 mobile ends -->
         
@@ -481,12 +377,6 @@
                             </p>
                         </div>
                         <div id="popUp_Lower" class="lowerSection">
-                            <!-- <h3>WHAT WE BUY</h3>
-                            <p>PXWIX : Pax Ellevate Global Women’s Leadership Fund
-                            </p>
-                            <p>VTI : Vanguard Total Stock Market ETF
-                            </p>
-                            <p>SUSA : iShares MSCI USA ESG Select ETF</p> -->
                         </div>
                     </div>
                 </div>  
@@ -624,7 +514,7 @@
                 </div>
                 <div class="buttonContainer">
                     <button>
-                        BECOME A MEMBER
+                        Get Started
                     </button>
                 </div>
             </div>
@@ -706,195 +596,12 @@
                 Folio Institutional uses your email address to send you important notices and information, including information about your trade confirmations, account statements and year-end tax information. It’s important that your account is verified so that you can receive valuable information about your investments directly from Folio Institutional as your custodian. It is also important to ensure you maintain all your account data elements in current state.
             </p>
          </div>
-         <!-- <div class="seeallFaqsContainer">
-            <p>SEE ALL FAQ</p>
-         </div> -->
+        
         </div>
         <!-- faq ends -->
             
 
         <!--Trust & Afford-->
-        <!-- <section class="section-trust">
-            <div class="container">
-                <div class="trust">
-                    <p class="trust-title">Trusted easy and affordable.</p>
-                    <h3 class="heading heading-3 trust-summary">That's where we come in</h3>
-                </div>
-            </div>
-        </section> -->
-
-        <!--FEATURE-->
-        <!--Debit Card-->
-        <!-- <section class="section-debitCard">
-            <div class="container">
-                <div class="debit-card">
-                    <div class="row">
-                        <div class="col-md-6 debit-card__left">
-                            <h4 class="heading heading-4 debit-card__title">Finally, a debit card with Perks</h4>
-                            <p class="debit-card__intro">Enjoy cashback on subscriptions from brands you know and love, and unlock exclusive discounts on travel, wellness, entertainment, and more.</p>
-                            <div class="debit-card__btn">
-                                <a href="#" class="debit-card__btn-explore">Explore Perks</a>
-                                <i class="icon-arrows-right debit-card__btn-arrow"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-6 debit-card__right">
-                            <div class="debit-card__box">
-                                <img src="images/credit-card.png" alt="Card" class="debit-card__series debit-card__series-img1">
-                                <img src="images/credit-card.png" alt="Card" class="debit-card__series debit-card__series-img2">
-                                <img src="images/credit-card.png" alt="Card" class="debit-card__series debit-card__series-img3">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!--Fees-->
-        <!-- <section class="section-fees">
-            <div class="container">
-                <div class="fees">
-                    <div class="row">
-                        <div class="col-md-6 fees__left"><img src="images/iphone-setting.jpg" alt="Phone" class="fees-img__phone"></div>
-                        <div class="col-md-6 fees__right">
-                            <h4 class="heading heading-4 fees-title">No hidden fees</h4>
-                            <p class="fees-intro">Open a N26 account directly from your phone in 5 minutes and experience banking with no hidden fees. Yes, really - no minimum account balance, no maintainence charges, no insufficient funds fees, no problem.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!--Cash-->
-        <!-- <section class="section-cash">
-            <div class="container">
-                <div class="cash">
-                    <div class="row">
-                        <div class="col-md-6 cash__left">
-                            <h4 class="heading heading-4 cash-title">Free cash withdrawls</h4>
-                            <p class="cash-intro">Get unlimited free ATM withdrawls at over 55,000. All point locations across the US, Canada, Puerto Rico, Australia, Mexico, and the UK.</p>
-                            <p class="cash-intro">Out-of-network? No problem. Enjoy 2 additional free ATM withdrawls per month from any network, anytime, anywhere in the US.</p>
-                        </div>
-                        <div class="col-md-6 cash__right">
-                            <div class="cash-map__box"><img src="images/img-gmap.jpg" alt="Map" class="cash-map__img"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!--Paycheck-->
-        <!-- <section class="section-paycheck">
-            <div class="container">
-                <div class="paycheck">
-                    <div class="paycheck-top">
-                        <h4 class="heading heading-4 paycheck-title">Get your paycheck earlier</h4>
-                        <p class="paycheck-intro">Hate waiting for payday?Get paid up to 2 days earlier with direct deposit. With N26, Wednesday is the new Friday.</p>
-                        <a href="#" class="paycheck-btn__account">Open an account</a>
-                    </div>
-                    <div class="paycheck-bottom">
-                        <div class="paycheck-card"><img src="images/credit-card.png" alt="Card" class="paycheck-card__img"></div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!--Money-->
-        <!-- <section class="section-money">
-            <div class="container">
-                <div class="money">
-                    <div class="row">
-                        <div class="col-md-6 money__left">
-                            <h4 class="heading heading-4 money-title">Your money goals pesonalized</h4>
-                            <p class="money-intro">Whether you're putting money aside for a new phone or a trip to Thailand. Spaces help you visualize your short-time and long-term financial goals. Create personalized sub-accounts and instantly transfer money as often as you'd like.</p>
-                        </div>
-                        <div class="col-md-6 money__right"><img src="images/iphone-setting.jpg" alt="Phone" class="fees-img__phone"></div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!--Price-->
-        <!-- <section class="section-price">
-            <div class="container">
-                <div class="price">
-                    <div class="price-top"><h4 class="heading heading-4 price-title">Mogan Stanley at your fingertips</h4></div>
-                    <div class="price-middle">
-                        <div class="price-annual">
-                            <h3 class="price-annual__number">0.35%</h3>
-                            <p class="price-annual__sub-title">annual fee</p>
-                        </div>
-                        <div class="divider"></div>
-                        <div class="price-invest">
-                            <h3 class="price-invest__number">$5,000</h3>
-                            <p class="price-invest__sub-title">minimum investment</p>
-                        </div>
-                    </div>
-                    <div class="price-bottom">Your annual asset-based advisory fee is based on your account balance and will be charged monthly. The advisory fee does not include,and is in addition to, the fees related to owning shares of exchange-traded funds and mutual funds.</div>
-                </div>
-            </div>
-        </section> -->
-
-        <!--FAQ-->
-        <!-- <section class="section-faq">
-            <div class="container">
-                <div class="faq">
-                    <div class="faq-top"><h4 class="heading heading-4 faq-title">Getting into the details</h4></div>
-
-                    <div class="faq-bottom">
-                        <div class="accordion accord-container" id="accordionExample">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <h2 class="mb-0">
-                                        <button type="button" class="btn btn-link accord-btn" data-toggle="collapse" data-target="#collapseOne">How pricing works <span class="accDir">&rang;</span></button>                                   
-                                    </h2>
-                                </div>
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque magnam distinctio perspiciatis corporis? Voluptate autem itaque totam aperiam aliquam!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0">
-                                        <button type="button" class="btn btn-link collapsed accord-btn" data-toggle="collapse" data-target="#collapseTwo">How our investments work<span class="accDir">&rang;</span></button>
-                                    </h2>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, enim laborum pariatur amet quibusdam nobis.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <h2 class="mb-0">
-                                        <button type="button" class="btn btn-link collapsed accord-btn" data-toggle="collapse" data-target="#collapseThree">Help with your account or finances<span class="accDir">&rang;</span></button>                     
-                                    </h2>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, modi?</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingFour">
-                                    <h2 class="mb-0">
-                                        <button type="button" class="btn btn-link collapsed accord-btn" data-toggle="collapse" data-target="#collapseFour">Help with your account or finances<span class="accDir">&rang;</span></i></button>                     
-                                    </h2>
-                                </div>
-                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quibusdam blanditiis deserunt distinctio esse nisi maiores dolorum, unde accusantium autem.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
     </main>
 
@@ -951,9 +658,6 @@
                 
                     <div class="col-sm-12 col-md-6">
                         <div class="footer_links">
-                            <!-- <a href="#" class="footer__link text-light font-weight-bold">Help Center</a>
-                            <a href="#" class="footer__link text-light font-weight-bold">Press</a>
-                            <a href="#" class="footer__link text-light font-weight-bold">Careers</a> -->
                             <a href="./Legal/index.html" class="footer__link text-light 
                             font-weight-bold">Legal</a>
                             <a href="./Privacy/index.html" class="footer__link text-light font-weight-bold">Privacy</a>
@@ -962,26 +666,6 @@
                     </div>
                 </div>
             </div>
-            <!--
-            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-                <a class="navbar-brand" href="#">&copy; Copyright 2021 Form Advisory Group, Inc. All rights reserved.</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse ml-auto" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                          <a class="nav-link font-weight-bold text-light" href="#">Legal <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link font-weight-bold text-light" href="#">Privacy</a></li>
-                        <li class="nav-item"><a class="nav-link font-weight-bold text-light" href="#">Terms</a></li>
-                        <li class="nav-item"><a class="nav-link font-weight-bold text-light" href="#">Careers</a></li>
-                        <li class="nav-item"><a class="nav-link font-weight-bold text-light" href="#">Press</a></li>
-                        <li class="nav-item"><a class="nav-link font-weight-bold text-light" href="#">Help Center</a></li>
-                    </ul>
-                </div>
-            </nav>
-            -->
         </div>
     </footer>
 
@@ -1003,6 +687,10 @@
             $(this).prev(".card-header").find(".accDir").css("transform", "rotate(0deg)");
         });
     });
+
+    document.getElementById("preventAnchor").addEventListener("click", function(e){
+        e.preventDefault();
+    })
 </script>
 </body>
 </html>

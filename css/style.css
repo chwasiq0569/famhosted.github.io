@@ -519,6 +519,7 @@ body {
   font-family: "Montserrat", Times, serif;
   color: black;
   position: relative;
+  background-color: #edeee8;
 }
 .accord-container {
   width: 75%;
@@ -1824,8 +1825,10 @@ body {
 .gridInfoContainer {
   width: 100%;
   text-align: center;
-  padding-top: 7rem;
+  padding-top: 14rem;
   background-color: #edeee8;
+  /* padding-top: 4rem; */
+  padding-bottom: 5rem;
 }
 .gridInfoContainer .head {
   width: 540px;
@@ -1836,6 +1839,7 @@ body {
   /* font-weight: 600; */
   font-family: SofiaProBlack;
   font-size: 3.2rem;
+  text-transform: lowercase;
 }
 .gridInfoContainer .grid {
   width: 100%;
@@ -1902,6 +1906,7 @@ body {
   font-weight: 600;
   font-family: SofiaProBlack;
   font-size: 3.2rem;
+  text-transform: lowercase;
 }
 .gridInfoContainer2 .grid2 {
   display: flex;
@@ -1926,7 +1931,8 @@ body {
   font-family: SofiaProBlack;
   font-size: 5rem;
   font-weight: 300;
-  color: #d41230;
+  /* color: #d41230; */
+  color: black;
 }
 .gridInfoContainer2 .grid2 .col1 .main,
 .gridInfoContainer2 .grid2 .col2 .main,
@@ -1965,7 +1971,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 4rem;
-  /* background-color: #F5F5F5; */
+  /* background-color: #00946a; */
 }
 .section3Container .upper {
   padding-top: 4rem;
@@ -1990,6 +1996,7 @@ body {
   font-family: SofiaProBlack;
   /* font-weight: 600; */
   text-align: center;
+  text-transform: lowercase;
   /* color: red; */
 }
 .section3Container .upper .info {
@@ -2068,6 +2075,7 @@ body {
 }
 .section3Container .lower .lowerInner_Container .col .row .head {
   font-weight: 550 !important;
+  font-size: 1.75rem !important;
 }
 .section3Container .lower .lowerInner_Container .col .row .main,
 .section3Container .lower .lowerInner_Container .col .row .details {
@@ -2092,7 +2100,7 @@ body {
   border: none;
   color: white;
   font-weight: 500;
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
 }
 .section3Container .lower .lowerInner_Container .leftSide {
 }
@@ -2109,23 +2117,29 @@ body {
   font-family: SofiaProMedium;
 }
 .section3Container .lower .lowerInner_Container .col .row .main {
-  font-size: 13px;
+  font-size: 14px;
   text-align: left;
   font-family: SofiaProMedium;
 }
 .section3Container .lower .lowerInner_Container .col .row .info {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1;
   text-align: left;
   font-family: SofiaProRegular;
+  color: #a3a6a8;
 }
-
+.section3Container .lower .lowerInner_Container .col .row .feeInfo {
+  font-size: 13px;
+  /* color: #a3a6a8; */
+}
 .section3Container .lower .lowerInner_Container .col .row .details {
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   font-family: SofiaProRegular;
 }
-
+/* .section3Container .lower .lowerInner_Container .col .price p { */
+/* font-size: 1.5rem !important; */
+/* } */
 .compareProgramsContianer {
   width: 100%;
   display: flex;
@@ -2207,6 +2221,7 @@ body {
   font-size: 40px;
   font-family: SofiaProBlack;
   font-weight: 600;
+  text-transform: lowercase;
 }
 .investmentStrategy__SectionContainer .investment_leftSide p:nth-child(2) {
   margin-top: 2rem;
@@ -2347,6 +2362,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: brightness(90%);
 }
 
 .investmentStrategy__SectionContainer
@@ -2397,7 +2413,8 @@ body {
   height: 100%;
   text-align: center;
   /* background-color: #5f8fb4; */
-  background-color: #ef7622;
+  /* background-color: #ef7622; */
+  background-color: #01535c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2410,7 +2427,8 @@ body {
   .upper_leftSection
   .row
   .box {
-  background-color: #1f55a5;
+  /* background-color: #1f55a5; */
+  background-color: #3b805d;
 }
 .investmentStrategy__SectionContainer
   .investment_rightSide
@@ -2419,7 +2437,8 @@ body {
   .row
   .box {
   /* background-color: #d29f13; */
-  background-color: #a58832;
+  /* background-color: #a58832; */
+  background-color: #6d4e41;
 }
 .investmentStrategy__SectionContainer
   .investment_rightSide
@@ -2479,6 +2498,7 @@ body {
   justify-content: center;
   padding-bottom: 3rem;
   text-align: center;
+  text-transform: lowercase;
 }
 .ctaSection .tagline p {
   font-size: 3.5rem;
@@ -3578,6 +3598,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }
 .getStartedLink {
   text-decoration: underline !important;
@@ -3682,8 +3703,8 @@ body {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
-  align-items: center;
   padding-top: 12rem;
+  align-items: center;
 }
 .ThirdBlackSection .headerSection {
   width: 80%;
@@ -3691,7 +3712,7 @@ body {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 6rem;
-  margin-top: 3.5rem;
+  margin-top: 10%;
   font-weight: 400;
   /* font-family: SofiaProMedium; */
   font-family: SofiaProRegular;
@@ -3710,6 +3731,9 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
+  /* padding-top: 8rem; */
+  margin-top: 10rem;
+  margin-bottom: 4rem;
 }
 .imagePlaceHolderSection img {
   width: 100%;
@@ -3764,4 +3788,117 @@ body {
     width: 100%;
     margin-top: 6rem;
   }
+}
+
+.signInSlider {
+  background-color: #f2f4f3;
+  width: 45rem;
+  height: 100vh;
+  position: fixed;
+  z-index: 8;
+  top: 0;
+  right: 0;
+  padding: 5rem;
+  font-family: SofiaProRegular;
+  transform: translateX(100%);
+  transition: all 0.35s ease-in-out;
+}
+.signInSlider .headerSection {
+  width: 100%;
+  height: 15%;
+  border-bottom: 2px solid rgba(46, 58, 87, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signInSlider .headerSection .closeIcon {
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.signInSlider .headerSection .closeIcon:hover {
+  background-color: black;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.signInSlider .headerSection .closeIcon:hover img {
+  filter: brightness(0) invert(1);
+}
+.signInSlider .headerSection .closeIcon img {
+  width: 30%;
+  height: 30%;
+  object-fit: contain;
+  transition: all 0.5s ease;
+}
+.signInSlider .signInSection .iconContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+.signInSlider .signInSection {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(46, 58, 87, 0.1);
+}
+
+.signInSlider .signInSection .iconContainer {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.signInSlider .signInSection .signInButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 3.5rem;
+  border-radius: 5rem;
+  border: 2px solid black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.signInSlider .signInSection .signInButton a {
+  text-decoration: none;
+  color: black;
+  margin-top: 0.25rem;
+  letter-spacing: 1px;
+}
+
+.signInSlider .signInSection:nth-child(3) .iconContainer {
+  margin-left: 0.5rem !important;
+}
+.signInSlider .signInSection:nth-child(2) .iconContainer img {
+  /* margin-left: 0.5rem !important; */
+  /* background-color: red; */
+  -webkit-filter: grayscale(200%);
+  filter: grayscale(200%);
+}
+.signInSlider .signInSection .signInButton:hover {
+  background-color: black;
+  color: white;
+}
+.signInSlider .signInSection .signInButton:hover a {
+  color: white;
+}
+
+@media screen and (max-width: 450px) {
+  .signInSlider {
+    width: 100%;
+  }
+}
+.showMoreGridForMobile {
+  width: 100%;
+  display: flex !important;
 }
