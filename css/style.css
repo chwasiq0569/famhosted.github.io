@@ -2497,7 +2497,7 @@ body {
   width: 24rem;
   height: 4rem;
   /* background-color: #0f9a8e; */
-  background-color: #8f5238;
+  background-color: var(--ctaBtns);
   color: white;
   letter-spacing: 1px;
   border: none;
