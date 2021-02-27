@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=0.8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Mulish', sans-serif; -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../css/webflow.css" rel="stylesheet" type="text/css">
+    <link href="../css/dob-9d4755.webflow.css" rel="stylesheet" type="text/css"> 
+    <title>Document</title>
+    <style>
+        .form-button {
+            outline: none;
+        }
+        .text-field, .text-area {
+            z-index: 2;
+        }
+        .text-field:focus + .field-label,
+        .field-label.active {
+            font-size: 12px;
+          top: -26px;
+          z-index: 3;
+          background-color: white;
+        }
+        .text-area:focus + .area-label,
+        .area-label.active {
+          font-size: 12px;
+          top: -10px;
+          z-index: 3;
+          background-color: white;
+        }
+        .text-field-done.active{
+            width: 24px;
+          height: 24px;
+          opacity: 1;
+        }
+        .text-field.done,
+        .text-area.done {
+          border-color: rgba(127, 88, 226, 0.5);
+        }
+        .details{
+          line-height: 1.5 !important;
+          padding-bottom: 0.5rem;
+          font-family: 'Courier New', Courier, monospace;
+        }
+        a{
+           text-decoration: none;
+       }
+        </style>
+</head>
+<body>
+  <div class="wrapper">
+        <div class="progressBar">
+            <div class="progressbarContainer">
+              <progress value="50" max="100"></progress>
+            </div>
+            <div class="mark_icon">
+              <div class="markIcon_Container">
+                <img src="../assets/icons/success.svg" alt="check_mark" />
+              </div>
+            </div>
+        </div>
+        <div  class="content">
+        <div class="logo">
+          <a href="../../platform.html"><span>fam.</span></a>
+        </div>
+
+<div id="stepThree" class="mainStepOne">
+  <div class="headlineTwo">
+      <span class="questionStatement">What type of account are you looking for?</span>
+  </div> 
+     <div class="privacyPolicy" style="margin-top: 0rem;">
+       <span></span>
+     </div>   
+    <div id="options" class="options">
+      <label id="initialRadioOneContainer" class="optionContainer">
+          <!-- <input  id="initialRadioOne" type="radio" name="ques" > -->
+          <div class="iconContainer">
+            <svg class="iconSimple" id="check_mark" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+              <path id="check_mark"  d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"/>
+              </svg>
+          </div>
+          <div class="title">
+            General long-term investing
+          </div>
+          </label>
+          <label id="initialRadioTwoContainer" class="optionContainer">
+            <!-- <input id="initialRadioOne" type="radio" name="ques" > -->
+            <div class="iconContainer">
+              <svg class="iconSimple" id="check_mark" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                <path id="check_mark"  d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"/>
+                </svg>
+            </div>
+            <div class="title">
+              Retirement investing
+            </div>
+            </label>
+    </div>
+    <!-- stepThreeOne satarts -->
+    <div id="innerStepsContainer" class="innerStepsContainer">
+      
+      <!-- stepThreeOne ends -->
+      <!-- stepThreeTwo starts -->
+       
+    </div>
+   
+<!-- Quiz Ends -->
+</div> 
+</div> 
+</div> 
+
+<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=600369c9da7fb7d64df10a9f" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<!-- <script src="./initialCheckbox.js"></script> -->
+<script>
+
+
+function checks(elem){
+  console.log("CHECKS")
+Array.from(elem.querySelectorAll(".optionContainer")).forEach(function(label){
+  console.log(label)
+      if(label.querySelector("input").checked){
+          label.style.backgroundColor = "rgba(5,136,102, 0.8)";
+          label.style.color = "white";
+          label.querySelector(".iconContainer").getElementsByTagName("svg")[0].style.fill = "white";
+      }
+      else{
+          label.style.backgroundColor = "#F6F7FA";
+          label.style.color = "#949494";
+          label.querySelector(".iconContainer").getElementsByTagName("svg")[0].style.fill = "#949494";
+        }
+    })
+}
+
+document.getElementById("initialRadioOneContainer").addEventListener("click", function(){
+// styling outerBoxes
+const step = `<form action = "quizs.html" id="stepThreeInnerOne" class="mainStepOne">
+        <div class="headlineTwo">
+            <span class="questionStatement">General Long Term Investement?
+            </span>
+           </div> 
+           <div class="privacyPolicy" style="margin-top: 0rem;">
+             <span>A long-term investment is an account a company plans to keep for at least a year such as stocks, bonds, real estate, and cash.
+            </span>
+        </div>   
+           <div id="options" class="options">
+            <label class="optionContainer">
+                <input name="innerTwo" type="radio" name="ques" >
+                <div class="iconContainer">
+                  <svg class="iconSimple" id="check_mark" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                    <path id="check_mark"  d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"/>
+                    </svg>
+                </div>
+                <div class="optionsData" style="margin-left:1.1rem;"> 
+                        <div class="opt">
+                          Individual
+                        </div>
+                        <div class="info">
+                          An account just for you.
+                        </div>
+                        <div class="details">
+                    
+                        </div>
+                </div>
+                </label>
+            <label class="optionContainer">
+                <input name="innerTwo" type="radio" name="ques" >
+                <div class="iconContainer">
+                  <svg class="iconSimple" id="check_mark" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                    <path id="check_mark"  d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"/>
+                    </svg>
+                </div>
+                <div class="optionsData">
+                  <div class="opt">
+                    Joint
+                  </div>
+                  <div class="info">
+                    An account for you and a partner.
+                  </div>
+                  <div class="details">
+                    Joint accounts can only be managed by the primary account holder. Shared account access is coming in the future.
+                  </div>
+                </div>
+                </label>
+            <label class="optionContainer">
+                <input name="innerTwo" type="radio" name="ques" >
+                <div class="iconContainer">
+                  <svg class="iconSimple" id="check_mark" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                    <path id="check_mark"  d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"/>
+                    </svg>
+                </div>
+                <div class="optionsData"  style="margin-left:1.1rem;">
+                  <div class="opt">
+                    Trust
+                  </div>
+                  <div class="info">
+                    An account owned by your trust.
+                  </div>
+                  <div class="details">
+                    
+                  </div>
+                </div>
+                </label>
+           </div> 
+           <button type="submit" class="form-next w-slider-arrow-right" id="nextBtn"> Next </button>
+        </form>`;
+
+        document.getElementById("innerStepsContainer").innerHTML = step;
+
+  // disabling button
+  document.getElementById("stepThreeInnerOne").querySelector("button").setAttribute("disabled", true);
+
+    document.getElementById("initialRadioOneContainer").style.backgroundColor = "rgba(5,136,102, 0.8)";
+    document.getElementById("initialRadioOneContainer").style.color = "#FCFCFC";
+    document.getElementById("initialRadioOneContainer").querySelector(".iconSimple").style.fill = "#F6F7FA";
+// 2nd
+    document.getElementById("initialRadioTwoContainer").style.backgroundColor = "#F6F7FA";
+    document.getElementById("initialRadioTwoContainer").style.color = "#949494";
+    document.getElementById("initialRadioTwoContainer").querySelector(".iconSimple").style.fill = "#949494";
+// handling inner
+    
+    $("input:radio").change(function () {
+    console.log("CHANGED");
+    console.log($("#nextBtn"));
+      $("#nextBtn").attr("disabled", false);
+      checks(document.getElementById("stepThreeInnerOne"));
+                                       });
+})
+
+document.getElementById("initialRadioTwoContainer").addEventListener("click", function(){
+
+  const step = `<form action = "quizs.html" id="stepThreeInnerTwo" class="mainStepOne">
+        <div class="headlineTwo">
+            <span class="questionStatement">Retirement investing
+            </span>
+           </div> 
+           <div class="privacyPolicy" style="margin-top: 0rem;">
+             <span>Tax-advantaged accounts for money you won't need before your 60th birthday.
+            </span>
+        </div>   
+           <div id="options" class="options">
+            <label class="optionContainer">
+                <input type="radio" name="ques" >
+                <div class="iconContainer">
+                  <svg class="iconSimple" id="check_mark" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                    <path id="check_mark"  d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"/>
+                    </svg>
+                </div>
+                <div class="optionsData">
+                        <div class="opt">
+                          Traditional IRA
+                        </div>
+                        <div class="info">
+                          Traditional IRA
+                          For tax-deductible contributions, 401(k) rollovers, and IRA transfers.
+                        </div>
+                        <div class="details">
+                          Tax deductions depend on your income and whether you have an employer-sponsored retirement plan.
+                        </div>
+                </div>
+                </label>
+            <label class="optionContainer">
+                <input type="radio" name="ques" >
+                <div class="iconContainer">
+                  <svg class="iconSimple" id="check_mark" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                    <path id="check_mark"  d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"/>
+                    </svg>
+                </div>
+                <div class="optionsData">
+                  <div class="opt">
+                    Roth IRA
+                  </div>
+                  <div class="info">
+                    Open a new Roth IRA or convert a wealthfront traditional IRA. Income limits may apply, and conversions may incur taxes.
+                  </div>
+                  <div class="details">
+                  </div>
+                </div>
+                </label>
+            <label class="optionContainer">
+                <input type="radio" name="ques" >
+                <div class="iconContainer">
+                  <svg class="iconSimple" id="check_mark" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                    <path id="check_mark"  d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"/>
+                    </svg>
+                </div>
+                <div class="optionsData">
+                  <div class="opt">
+                     SEP IRA
+                  </div>
+                  <div class="info">
+                    For small business owners and the self-employed who already have SEP plans to make tax-deductible contributions for themselves and their employees.
+                  </div>
+                  <div class="details">
+                  </div>
+                </div>
+                </label>
+           </div> 
+           <button type="submit"  class="form-next w-slider-arrow-right clickableBtn"> Next </button>
+        </form> 
+  `;
+
+  document.getElementById("innerStepsContainer").innerHTML = step;
+
+  // disabling button
+  document.getElementById("stepThreeInnerTwo").querySelector(".clickableBtn").setAttribute("disabled", true);
+
+// styling outerBoxes
+  document.getElementById("initialRadioTwoContainer").style.backgroundColor = "rgba(5,136,102, 0.8)";
+  document.getElementById("initialRadioTwoContainer").style.color = "#FCFCFC";
+  document.getElementById("initialRadioTwoContainer").querySelector(".iconSimple").style.fill = "#F6F7FA";
+// 2nd
+  document.getElementById("initialRadioOneContainer").style.backgroundColor = "#F6F7FA";
+  document.getElementById("initialRadioOneContainer").style.color = "#949494";
+  document.getElementById("initialRadioOneContainer").querySelector(".iconSimple").style.fill = "#949494";
+  //handling inner
+
+  // Array.from(document.getElementById("stepThreeInnerOne").querySelector("#options").querySelectorAll("label")).forEach(function(label){
+  //    label.querySelector("input").checked = false;
+  //    console.log( label.querySelector("input").checked);
+  // })
+
+  $("input:radio").change(function () {
+    console.log("CHANGEd");
+    console.log($("#nextBtn"));
+      $(".clickableBtn").attr("disabled", false);
+      checks(document.getElementById("stepThreeInnerTwo"));
+                                      });
+
+})
+
+</script>
+
+</body>
+</html>

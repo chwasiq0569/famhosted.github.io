@@ -1,0 +1,459 @@
+<?php
+
+// Definitions
+define('PATH', '');
+define('ROOT_PATH', '');
+define('FRONTEND', 'true');
+$page = 'Home';
+
+
+
+require_once 'core/init.php';
+
+$user = new User();
+$queries = new Queries();
+
+if(!isset($_GET['step'])) { 
+	Redirect::to('wizard.php?step=1');
+	die();
+ }
+ 
+ if($_GET['step'] == 1) { 
+	$_SESSION['questionnum'] = 1;
+	$_SESSION["progress"] = 0;
+} elseif($_GET['step'] == -1) {
+	session_destroy();
+	Redirect::to('queuelogin.php');
+}
+							
+if(Input::exists()) {
+    if(Token::check(Input::get('token'))) {
+
+        $validate = new Validate();
+        $validation = $validate->check($_POST, array(
+            'fname' => array(
+					'required' => true,
+					'min' => 3,
+					'max' => 64
+				),
+			  'lname' => array(
+					'required' => true,
+					'min' => 3,
+					'max' => 64
+				),
+			 'day' => array(
+					'required' => true
+				),
+			'month' => array(
+					'required' => true
+				),
+			'year' => array(
+					'required' => true
+				),
+				'email' => array(
+					'required' => true,
+					'min' => 4,
+					'max' => 102,
+					'unique' => 'userdata'
+				)
+        ));
+			
+			if($validate->passed()) {
+				
+				$dob = $_POST['month'] . '/' . $_POST['day'] . '/' . $_POST['year'];
+				
+						$queries->create('userdata', array(
+								'fname' => $_POST['fname'],
+								'lname' => $_POST['lname'],
+								'email' => $_POST['email'],
+								'dob' => $dob,
+								'active' => 0,
+								'stage' => 2
+							));
+						
+			$GetUserID = $queries->getWhere('userdata', array('email', '=', $_POST['email']));
+			
+			$_SESSION["progress"] = $_SESSION["progress"] + 10;
+			$_SESSION['questionnum'] = $_SESSION['questionnum'] + 1;
+			$_SESSION["userid"] = $GetUserID[0]->id;					
+			$_SESSION["useremail"] = $_POST['email']; // Reference to database.
+			$_SESSION["stage"] = 2; // Reference to database.
+			unset($_SESSION["smscode"]);
+			$_SESSION["topstage"] = 1;
+			
+			
+			quesstionarePages/phoneValidate2.html
+			
+			Redirect::to('wizard.php?step=2');
+			die();	
+   
+
+									
+        } else {
+            foreach($validate->errors() as $error) {
+				if($error == "The username/email email already exists!") {
+					$getstage = $queries->getWhere('userdata', array('email', '=', $_POST['email']));
+					$_SESSION["userid"] = $getstage[0]->id;
+					$_SESSION["stage"] = $getstage[0]->stage;
+					$_SESSION["topstage"] = GetTopStage($getstage[0]->stage);
+					Redirect::to('wizard.php?step=' . $getstage[0]->stage);
+					die();	
+				} else {
+	
+				}
+					
+            }
+        
+    }
+}
+}			
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=0.8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- font-family: 'Mulish', sans-serif; -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/dob-9d4755.webflow.css" rel="stylesheet" type="text/css">
+  <title>Form</title>
+  <style>
+    .optionsData {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-button {
+      outline: none;
+    }
+
+    .text-field,
+    .text-area {
+      z-index: 2;
+    }
+
+    .text-field:focus+.field-label,
+    .field-label.active {
+      font-size: 12px;
+      top: -26px;
+      z-index: 3;
+      background-color: white;
+    }
+
+    .text-area:focus+.area-label,
+    .area-label.active {
+      font-size: 12px;
+      top: -10px;
+      z-index: 3;
+      background-color: white;
+    }
+
+    .text-field-done.active {
+      width: 24px;
+      height: 24px;
+      opacity: 1;
+    }
+
+    .text-field.done,
+    .text-area.done {
+      border-color: rgba(5, 136, 102, 0.5);
+    }
+
+    @media screen and (max-width: 480px) {
+      body {
+        overflow-x: hidden;
+        /* padding-left: 1.5rem !important; */
+        /* padding: 0 !important; */
+        /* padding-right: 1.5rem !important;  */
+      }
+
+      .wrapper {
+        /* padding-left: 1.5rem;  */
+        padding-top: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="progressBar">
+      <div class="progressbarContainer">
+        <progress value="20" max="100"></progress>
+      </div>
+      <div class="mark_icon">
+        <div class="markIcon_Container">
+          <img src="./assets/icons/success.svg" alt="check_mark" />
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="logo">
+        <span>fam.</span>
+      </div>
+      <div id="stepOne" class="mainStepOne">
+        <div class="headline">
+          <span>The choice of a new generation.
+          </span>
+        </div>
+        <div class="headlineTwo">
+          <span>
+            Enter your Details to get started
+          </span>
+        </div>
+        <div class="privacyPolicy">
+          <span>By continuing, you agree to be evaluated for multiple Petal credit products and acknowledge and agree to
+            Petal's Auto-dialer Authorization, Privacy Policy, and Site Terms and to be contacted at the number you
+            enter below. Message and data rates may apply.</span>
+        </div>
+        <form role="form" action="" method="post" autocomplete="off" id="email-form" name="email-form" data-name="Email Form"
+          class="form">
+          <div data-animation="outin" data-hide-arrows="1" data-duration="500" data-infinite="1"
+            class="form-slider w-slider">
+            <div class="form-mask w-slider-mask">
+              <div data-w-id="26fa41f8-9061-99a3-9a35-1773136ae599" class="form-slide w-slide">
+                <div class="form-step">
+                  <div class="fields-group">
+                    <div class="text-field-wrapper half">
+
+                      <input type="text" class="text-field w-input" maxlength="256" name="fname"
+                        data-name="First mane" placeholder="" id="fname" required>
+
+                      <label for="name" class="field-label">First name</label>
+                      <!-- <div class="text-field-done"></div> -->
+                    </div>
+                    <div class="text-field-wrapper half">
+                      <input required type="text" class="text-field w-input" maxlength="256" name="lname"
+                        data-name="Last name" placeholder="" id="lname"><label for="name-2" class="field-label">Last
+                        name</label>
+                      <!-- <div class="text-field-done"></div> -->
+                    </div>
+                  </div>
+                  <div class="form-label" style="margin-bottom: 20px; margin-left: 7px;">Date of birth</div>
+                  <div class="fields-group">
+                    <div class="text-field-wrapper third">
+                      <!-- <input required type="text" class="text-field w-input" maxlength="256" name="Month" data-name="Month" placeholder="" id="Month"><label for="name" class="field-label">Month</label> -->
+                      <input class="text-field w-input" type="number" required name="Month" data-name="Month" min="1"
+                        id="month" name="month" placeholder="" max="12" /><label for="name" class="field-label">Month</label>
+                      <!-- <div class="text-field-done"></div> -->
+                    </div>
+                    <div class="text-field-wrapper third">
+
+                      <input class="text-field w-input" type="number" required name="day" data-name="Day" min="1"
+                        id="day"  placeholder="" max="31" /><label for="name" class="field-label">Day</label>
+
+                      <!-- <input required type="text" class="text-field w-input" maxlength="256" name="Day" data-name="Day" placeholder="" id="Day" ><label for="name" class="field-label">Day</label> -->
+                      <!-- <div class="text-field-done"></div> -->
+
+                    </div>
+                    <div class="text-field-wrapper third">
+
+                      <input class="text-field w-input" type="number" required name="year" data-name="Year" min="1"
+                        id="year" placeholder="" max="9999" /><label for="name" class="field-label">Year</label>
+
+                      <!-- <input required type="text" class="text-field w-input" maxlength="256" name="Year" data-name="Year" placeholder="" id="Year"><label for="name" class="field-label">Year</label> -->
+                      <!-- <div class="text-field-done"></div> -->
+
+                    </div>
+                    <div class="text-field-wrapper">
+                      <input required type="email" class="text-field w-input" maxlength="256" name="email"
+                        data-name="Email" placeholder="" id="email"><label for="email" class="field-label">Email
+                        Address</label>
+                      <div class="text-field-done"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+			<input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
+            <button type="submit" id="getStartedBtnEnabled" class="form-next w-slider-arrow-right">Get Started</button>
+            <div class="slide-nav w-slider-nav w-round"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Quiz Ends -->
+
+  </div>
+
+  </div>
+
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=600369c9da7fb7d64df10a9f"
+    type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+  </script>
+
+  <!-- <script type="text/javascript" src="./quessionare.js"></script> -->
+
+  <script>
+    // 
+    // 
+    document.getElementById("email-form").addEventListener("submit", function () {
+      // if(dateChecker()) e.preventDefault();
+      window.location = './phoneValidate2.html';
+    })
+
+
+    // validations starts
+    function dateChecker() {
+      var dayValidate = "([1-9]|[12]\d|3[01])";
+      var monthValidate = "^(0?[1-9]|1[012])$";
+      var yearValidate = "/^(19[5-9]d|20[0-4]d|2050)$/";
+      var days = document.getElementById('Day').value;
+      var months = document.getElementById('Month').value;
+      var years = document.getElementById('Year').value;
+      if (!days.match(dayValidate)) {
+        // alert("Please, Enter Days  between 1 to 31 ");
+        document.form1.dayId.focus();
+        return false;
+      }
+      if (!months.match(monthValidate)) {
+        // alert("Please, Enter Months in between 1 to 12 ");
+        document.form1.monthId.focus();
+        return false;
+      }
+      if (!(+years >= 1900 && +years <= 2016)) {
+        // alert("Please, Enter Years in between 1900 to 2016 ");
+        document.form1.yearID.focus();
+        return false;
+      }
+    }
+    // validation ends
+
+
+
+
+    $(document).ready(function () {
+      document.getElementById("getStartedBtnEnabled").setAttribute('disabled', true);
+
+      let dayStatus = true;
+      let monthStatus = true;
+      let yearStatus = true;
+      let firstNameStatus = true;
+      let lastNameStatus = true;
+      let emailStatus = true;
+
+      $('.form-next').prop('disabled', true);
+      $('#Day').keyup(function () {
+        console.log(this.value)
+        if (this.value == "") {
+          dayStatus = true;
+        } else {
+          dayStatus = false;
+        }
+        if (dayStatus == false && monthStatus == false && yearStatus == false && firstNameStatus == false &&
+          lastNameStatus == false && emailStatus == false) {
+          console.log("FALSE DAY")
+          $('.form-next').prop('disabled', false);
+        } else {
+          $('.form-next').prop('disabled', true);
+        }
+      })
+      //  
+      $('#Month').keyup(function () {
+        console.log(this.value)
+        if (this.value == "") {
+          monthStatus = true;
+        } else {
+          monthStatus = false;
+        }
+        if (dayStatus == false && monthStatus == false && yearStatus == false && firstNameStatus == false &&
+          lastNameStatus == false && emailStatus == false) {
+          console.log("FALSE MONTH")
+          // $('.form-next').prop('disabled', false);
+          $('.form-next').prop('disabled', false);
+        } else {
+          $('.form-next').prop('disabled', true);
+        }
+      })
+      //  
+      $('#Year').keyup(function () {
+        console.log(this.value)
+        if (this.value == "") {
+          yearStatus = true;
+        } else {
+          yearStatus = false;
+        }
+        if (dayStatus == false && monthStatus == false && yearStatus == false && firstNameStatus == false &&
+          lastNameStatus == false && emailStatus == false) {
+          console.log("FALSE YEAR")
+          // $('.form-next').prop('disabled', false);
+          $('.form-next').prop('disabled', false);
+        } else {
+          $('.form-next').prop('disabled', true);
+        }
+      })
+      // First-mane 
+      $('#First-mane').keyup(function () {
+        console.log(this.value)
+        if (this.value == "") {
+          firstNameStatus = true;
+        } else {
+          firstNameStatus = false;
+        }
+        if (dayStatus == false && monthStatus == false && yearStatus == false && firstNameStatus == false &&
+          lastNameStatus == false && emailStatus == false) {
+          console.log("FALSE YEAR")
+          $('.form-next').prop('disabled', false);
+        } else {
+          $('.form-next').prop('disabled', true);
+        }
+      })
+      $('#Last-name').keyup(function () {
+        console.log(this.value)
+        if (this.value == "") {
+          lastNameStatus = true;
+        } else {
+          lastNameStatus = false;
+        }
+        if (dayStatus == false && monthStatus == false && yearStatus == false && firstNameStatus == false &&
+          lastNameStatus == false && emailStatus == false) {
+          console.log("FALSE lastNameStatus")
+          $('.form-next').prop('disabled', false);
+        } else {
+          $('.form-next').prop('disabled', true);
+        }
+      })
+      $('#email').keyup(function () {
+        console.log(this.value)
+        if (this.value == "") {
+          emailStatus = true;
+        } else {
+          emailStatus = false;
+        }
+        if (dayStatus == false && monthStatus == false && yearStatus == false && firstNameStatus == false &&
+          lastNameStatus == false && emailStatus == false) {
+          console.log("FALSE lastNameStatus")
+          $('.form-next').prop('disabled', false);
+        } else {
+          $('.form-next').prop('disabled', true);
+        }
+      })
+    });
+
+    $('.text-field, .text-area').change(function () {
+      if ($(this).val().length > 0) {
+        $(this).siblings('.field-label').addClass('active')
+        $(this).siblings('.area-label').addClass('active')
+        $(this).siblings('.text-field-done').addClass('active')
+        $(this).addClass('done')
+      } else {
+        $(this).siblings('.field-label').removeClass('active')
+        $(this).siblings('.area-label').removeClass('active')
+        $(this).siblings('.text-field-done').removeClass('active')
+        $(this).removeClass('done')
+      }
+    })
+  </script>
+
+
+</body>
+
+</html>

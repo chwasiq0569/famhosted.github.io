@@ -1,0 +1,8 @@
+[08-Feb-2021 01:45:43 UTC] PHP Fatal error:  Uncaught Exception: Config unavailable. in /home/inveicvn/public_html/core/classes/Config.php:6
+Stack trace:
+#0 /home/inveicvn/public_html/core/classes/DB.php(22): Config::get('mysql/host')
+#1 /home/inveicvn/public_html/core/classes/DB.php(33): DB->__construct()
+#2 /home/inveicvn/public_html/core/classes/User.php(17): DB::getInstance()
+#3 /home/inveicvn/public_html/Wizard/wizard.php(51): User->__construct()
+#4 {main}
+  thrown in /home/inveicvn/public_html/core/classes/Config.php on line 6
