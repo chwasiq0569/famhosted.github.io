@@ -1966,7 +1966,10 @@ body {
   font-size: 1.75rem;
   font-family: SofiaProRegular;
 }
-
+.gridInfoContainer2 .buttonContainer .gridGetStartedBtn a {
+  text-decoration: none;
+  color: white;
+}
 .section3Container {
   width: 100%;
   height: 100%;
@@ -2012,7 +2015,10 @@ body {
 .lowerInner_Container .col .row .getStartedBtn {
   font-family: SofiaProRegular !important;
 }
-
+.getStartedBtn a {
+  text-decoration: none;
+  color: white;
+}
 .section3Container .lower .lowerInner_Container {
   width: 100%;
   display: flex;
@@ -2524,7 +2530,10 @@ body {
   border-radius: 3px;
   font-family: SofiaProMedium;
 }
-
+.ctaSection .buttonContainer button a {
+  text-decoration: none;
+  color: white;
+}
 /* faq */
 
 .faqContainer .questionContainer h1 {
