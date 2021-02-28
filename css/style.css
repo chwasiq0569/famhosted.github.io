@@ -3941,6 +3941,9 @@ footer {
   padding-left: 2rem !important;
   padding-right: 2rem !important;
 }
+.navbar {
+  padding: 0;
+}
 @media screen and (max-width: 600px) {
   .faqContainer {
     padding: 1.5rem;
@@ -3960,6 +3963,4 @@ footer {
     padding-right: 0.95rem !important;
   }
 }
-.navbar {
-  padding: 0;
-}
+
