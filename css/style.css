@@ -1628,6 +1628,7 @@ body {
   /* font-weight: 600; */
   padding-bottom: 5rem;
   font-family: SofiaProBlack;
+  font-size: 36px !important;
 }
 
 .chartSection__Container {
@@ -1694,13 +1695,13 @@ body {
 }
 .chartSection__Container .lowerSection .counters #leftCount .count,
 .chartSection__Container .lowerSection .counters #rightCount .count {
-  font-size: 3.2rem;
+  font-size: 36px;
   font-weight: 600;
 }
 .chartSection__Container .lowerSection .counters #leftCount .currency,
 .chartSection__Container .lowerSection .counters #rightCount .currency {
   display: flex;
-  font-size: 3.2rem;
+  font-size: 36px;
   align-items: center;
   font-weight: 600;
   color: #a3a6a8;
@@ -1826,7 +1827,7 @@ body {
 .gridInfoContainer {
   width: 100%;
   text-align: center;
-  padding-top: 14rem;
+  padding-top: 8rem;
   background-color: #edeee8;
   /* padding-top: 4rem; */
   padding-bottom: 5rem;
@@ -1840,7 +1841,7 @@ body {
 .gridInfoContainer .head h1 {
   /* font-weight: 600; */
   font-family: SofiaProBlack;
-  font-size: 3.2rem;
+  font-size: 36px;
   text-transform: lowercase;
 }
 .gridInfoContainer .grid {
@@ -1907,7 +1908,7 @@ body {
 .gridInfoContainer2 .head h1 {
   font-weight: 600;
   font-family: SofiaProBlack;
-  font-size: 3.2rem;
+  font-size: 36px;
   text-transform: lowercase;
 }
 .gridInfoContainer2 .grid2 {
@@ -2003,6 +2004,7 @@ body {
   text-align: center;
   text-transform: lowercase;
   /* color: red; */
+  font-size: 36px;
 }
 .section3Container .upper .info {
   font-family: SofiaProRegular;
@@ -2226,10 +2228,11 @@ body {
   font-size: 1.5rem;
 }
 .investmentStrategy__SectionContainer .investment_leftSide h1 {
-  font-size: 40px;
+  /*   font-size: 36px; */
   font-family: SofiaProBlack;
-  font-weight: 600;
+  /* font-weight: 600; */
   text-transform: lowercase;
+  font-size: 36px;
 }
 .investmentStrategy__SectionContainer .investment_leftSide p:nth-child(2) {
   margin-top: 2rem;
@@ -2509,7 +2512,8 @@ body {
   text-transform: lowercase;
 }
 .ctaSection .tagline p {
-  font-size: 3.5rem;
+  font-size: 36px;
+
   /* font-weight: ; */
   color: black;
   font-family: SofiaProBlack;
@@ -2541,7 +2545,8 @@ body {
 .faqContainer .questionContainer h1 {
   font-family: SofiaProBlack;
   font-size: 3.5rem;
-  font-weight: 600;
+  /* font-weight: 600; */
+  font-size: 36px;
 }
 .faqContainer .accordion p {
   font-family: SofiaProMedium;
@@ -3075,10 +3080,16 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .faqContainer .questionContainer h1 {
+  .faqContainer .questionContainer h1,
+  .videoHeadText,
+  .gridInfoContainer .head h1,
+  .ctaSection .tagline,
+  .investmentStrategy__SectionContainer .investment_leftSide,
+  .section3Container .upper .head,
+  .display-4,
+  .gridInfoContainer2 .head h1 {
     font-family: SofiaProBlack;
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 2.5rem !important;
   }
   .section3Container .upper {
     width: 100%;
@@ -3348,6 +3359,9 @@ body {
   }
   .faqContainer .panel p {
     font-size: 1.25rem;
+  }
+  .display-4 {
+    font-size: 28px !important;
   }
 }
 
@@ -3666,7 +3680,7 @@ body {
 }
 .videoSection .play-button-container .videoHeadText {
   margin-top: 8rem;
-  font-size: 5rem;
+  font-size: 36px;
   color: white;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -3721,7 +3735,7 @@ body {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
-  padding-top: 12rem;
+  /* padding-top: 12rem; */
   justify-content: center;
   align-items: center;
 }
@@ -3729,7 +3743,7 @@ body {
   width: 80%;
   color: white;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.75rem;
   /* margin-bottom: 6rem; */
   /* margin-top: 10%; */
   font-weight: 400;
@@ -3738,20 +3752,21 @@ body {
   text-transform: lowercase;
 }
 .ThirdBlackSection .mainContent {
-  width: 55%;
+  width: 32%;
   color: white;
   text-align: center;
-  font-size: 3.25rem;
-  line-height: 2;
+  font-size: 2.85rem;
+  line-height: 1.5;
   font-family: SofiaProMedium;
   text-transform: lowercase;
+  margin-top: 4rem;
 }
 .imagePlaceHolderSection {
   width: 100%;
   height: 100%;
   position: relative;
   /* padding-top: 8rem; */
-  margin-top: 10rem;
+  margin-top: 4rem;
   margin-bottom: 4rem;
 }
 .imagePlaceHolderSection img {
@@ -3793,7 +3808,7 @@ body {
     margin-top: 5rem;
   }
   .ThirdBlackSection .mainContent {
-    width: 80%;
+    width: 75%;
     font-size: 2rem;
   }
 }
@@ -3922,10 +3937,6 @@ body {
   display: flex !important;
 }
 
-.navbar {
-  padding: 0;
-}
-
 footer {
   padding-left: 2rem !important;
   padding-right: 2rem !important;
@@ -3944,8 +3955,11 @@ footer {
     padding: 0;
     margin: 1.5rem;
   }
-  .headNav {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .navHead {
+    padding-left: 0.95rem !important;
+    padding-right: 0.95rem !important;
   }
+}
+.navbar {
+  padding: 0;
 }
