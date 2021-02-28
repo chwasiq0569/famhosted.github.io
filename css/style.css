@@ -1830,6 +1830,7 @@ body {
   background-color: #edeee8;
   /* padding-top: 4rem; */
   padding-bottom: 5rem;
+  /* border: 2px solid red !important; */
 }
 .gridInfoContainer .head {
   width: 540px;
@@ -1974,7 +1975,7 @@ body {
 .section3Container {
   width: 100%;
   height: 100%;
-  padding: 4rem;
+  padding: 2rem;
   /* background-color: #00946a; */
 }
 .section3Container .upper {
@@ -2026,7 +2027,7 @@ body {
   padding: 0;
   background-color: #e7e7e7;
   padding-bottom: 8rem;
-  padding-right: 2rem;
+  /* padding-right: 2rem; */
 }
 .section3Container .lower .lowerInner_Container .col {
   width: 25%;
@@ -2034,7 +2035,7 @@ body {
   height: 45rem;
   padding: 0;
   margin: 0.5rem;
-  padding: 1rem;
+  padding: 0.25rem;
   /* padding-left: 3rem; */
   display: flex;
   flex-direction: column;
@@ -2976,6 +2977,7 @@ body {
   }
   .investmentStrategy__SectionContainer .investment_rightSide {
     height: 70% !important;
+    /* flex-direction: column-reverse !important; */
   }
   .investmentStrategy__SectionContainer
     .investment_rightSide
@@ -3000,7 +3002,7 @@ body {
     padding: 0;
   }
   .section3Container .lower .lowerInner_Container {
-    width: 400vw;
+    width: 360vw;
     padding: 0;
   }
   .section3Container .lower::-webkit-scrollbar-track {
@@ -3021,10 +3023,10 @@ body {
     background-color: #cecbcb;
   }
 
-  /* .section3Container .lower .lowerInner_Container .col{
-        border: 2px solid red !important;
-        width: 100%;
-    } */
+  .section3Container .lower .lowerInner_Container .col {
+    /* width: 90vw !important; */
+    width: 100%;
+  }
 }
 @media screen and (max-width: 680px) {
   .videoSection .play-button-container .videoHeadText {
@@ -3214,6 +3216,8 @@ body {
     text-align: center;
     align-items: center;
   }
+  .investmentStrategy__SectionContainer .investment_rightSide {
+  }
   .investmentStrategy__SectionContainer .investment_rightSide .upperSection {
     width: 100%;
     height: 50%;
@@ -3333,7 +3337,7 @@ body {
   }
   .faqContainer .accordion p {
     width: 80%;
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
   }
   .faqContainer .accordion .iconContainer {
     width: 0.75rem;
@@ -3343,7 +3347,7 @@ body {
     align-items: center;
   }
   .faqContainer .panel p {
-    font-size: 0.75rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -3436,6 +3440,10 @@ body {
     .box
     span {
     font-size: 8px;
+  }
+  .investmentStrategy__SectionContainer .investment_rightSide .lowerSection {
+    margin-bottom: 0;
+    margin-left: -0.6rem;
   }
 }
 
@@ -3714,6 +3722,7 @@ body {
   flex-direction: column;
   /* justify-content: center; */
   padding-top: 12rem;
+  justify-content: center;
   align-items: center;
 }
 .ThirdBlackSection .headerSection {
@@ -3721,8 +3730,8 @@ body {
   color: white;
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 6rem;
-  margin-top: 10%;
+  /* margin-bottom: 6rem; */
+  /* margin-top: 10%; */
   font-weight: 400;
   /* font-family: SofiaProMedium; */
   font-family: SofiaProRegular;
@@ -3911,4 +3920,32 @@ body {
 .showMoreGridForMobile {
   width: 100%;
   display: flex !important;
+}
+
+.navbar {
+  padding: 0;
+}
+
+footer {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+@media screen and (max-width: 600px) {
+  .faqContainer {
+    padding: 1.5rem;
+  }
+  footer,
+  .footer {
+    padding: 0 !important;
+    margin: 0;
+  }
+  .footer-navbar,
+  .footer-content {
+    padding: 0;
+    margin: 1.5rem;
+  }
+  .headNav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
